@@ -1,0 +1,72 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Introduction to Reproducibility with R. A UKRI Digital
+  Research Skills Catalyst workshop (Funded by
+  UKRI/ST/B000299/1)
+message: >-
+  If you use or reuse this training material, please cite
+  it! Thank you
+type: Training materials
+authors:
+  - given-names: Emma
+    family-names: Rand
+    email: emma.rand@york.ac.uk
+    affiliation: University of York
+    orcid: 'https://orcid.org/0000-0002-1358-8275'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo
+    description: >-
+      UKRI-Digital-Research-Skills-Catalyst/introduction-to-reproducibility-with-r:
+      v0.1.0-alpha
+      https://ukri-digital-research-skills-catalyst.github.io/introduction-to-reproducibility-with-r/
+repository-code: >-
+  https://github.com/UKRI-Digital-Research-Skills-Catalyst/introduction-to-reproducibility-with-r
+url: >-
+  https://ukri-digital-research-skills-catalyst.github.io/introduction-to-reproducibility-with-r/
+abstract: >-
+  This repository contains all materials for a half-day
+  workshop called "Introduction to Reproducibility with R".
+
+
+  After this workshop the successful learner will be able
+  to:
+
+
+  Find their way around the RStudio windows
+
+  Create and plot data using ggplot
+
+  Explain the rationale for scripting analysis
+
+  Know how to load packages
+
+  Understand what is meant by the working directory,
+  absolute and relative paths and be able to apply these
+  concepts to data import
+
+  Summarise data in a single group or in multiple groups
+
+  Develop highly organised analyses including well-commented
+  scripts that can be understood by future you and others
+
+
+  This workshop is designed for beginners with no prior
+  experience in R or RStudio. It is suitable for
+  environmental scientists, ecologists, and anyone
+  interested in learning how to use R for reproducible
+  research.
+keywords:
+  - R programming
+  - RStudio
+  - reproducibility
+  - automated reporting
+  - scientific publishing
+  - code
+  - data analysis
+license: CC-BY-NC-SA-4.0
+version: v0.1.0-alpha
+date-released: '2026-03-30'
