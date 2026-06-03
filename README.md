@@ -3,6 +3,7 @@
 <!-- badges: start -->
 
 <!-- zenodo badge -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20524981.svg)](https://doi.org/10.5281/zenodo.20524981)
 
 <!-- cc by 4.0 badge -->
 
