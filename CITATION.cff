@@ -27,7 +27,7 @@ repository-code: >-
   https://github.com/UKRI-Digital-Research-Skills-Catalyst/introduction-to-reproducibility-with-r
 url: >-
   https://ukri-digital-research-skills-catalyst.github.io/introduction-to-reproducibility-with-r/
-repository: 'https://zenodo.org/records/18848356'
+repository: 'https://zenodo.org/records/20524981'
 abstract: >-
   This repository contains all materials for a half-day
   workshop called "Introduction to Reproducibility with R".
