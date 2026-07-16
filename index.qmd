@@ -44,15 +44,14 @@ conceptually.
 
 After this workshop the successful learner will be able to:
 
--   Find their way around the RStudio windows
--   Create and plot data using ggplot
--   Explain the rationale for scripting analysis
--   Know how to load packages
--   Understand what is meant by the working directory, absolute and
-    relative paths and be able to apply these concepts to data import
--   Summarise data in a single group or in multiple groups
--   Develop highly organised analyses including well-commented scripts
-    that can be understood by future you and others
+- explain what an operating system is and the organisation of files and directories in a file system
+- explain root, home and working directories along with absolute and relative file paths
+- find their way around the RStudio windows, use an RStudio Project to organise work and a script to run commands
+- use the R command line to create and use the basic data types in R
+- distinguish between continuous and discrete variables and be able to appropriately summarise and plot them in R import data in to RStudio from a variety of file types
+- explain what is meant by ‘tidy’ data and organise data in spreadsheets.
+- customise and save publication quality figures
+- Use and modify R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files
 
 ## About the instructor
 
