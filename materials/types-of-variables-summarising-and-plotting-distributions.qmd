@@ -45,8 +45,8 @@ However, you need not remember or understand every detail as the workshop should
 Make an RStudio project for this workshop by
 clicking on the drop-down menu on top right where it says
 `Project: (None)` and choosing New Project, then New Directory, then New
-Project. Navigate to the `data-analysis-in-r-1` folder and name the
-RStudio Project 'r-july'.
+Project. Navigate to the `r-july` folder and name the
+RStudio Project 'session-2'.
 
 Make a new script then save it with a name like
 `import-summarise-plot.R` to carry out the rest of the work.
