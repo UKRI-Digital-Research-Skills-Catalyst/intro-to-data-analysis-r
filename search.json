@@ -1,173 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "An increase in the complexity and scale of biological data means biologists are increasingly required to develop the data skills needed to design reproducible workflows for the simulation, collection, organisation, processing, analysis and presentation of data. Developing such data skills requires at least some coding, also known as scripting. This makes your work (everything you do with your raw data) explicitly described, totally transparent and completely reproducible. However, learning to code can be a daunting prospect for many biologists! That’s where Reproducibility with R comes in!\nR is a free and open source language especially well-suited to data analysis and visualisation and has a relatively inclusive and newbie-friendly community. R caters to users who do not see themselves as programmers, but then allows them to slide gradually into programming.\nThis workshop will introduce you to R and RStudio, the most widely used interface for working with R. You will learn how to import data, manipulate it, summarise it and plot it. You will learn how to use an organised project-oriented workflow with well commented scripts so that you can understand your work in the future, and share it with others. In addition, you will learn what a working directory and a file path are - these are key concepts in computing generally but ones which are often not taught to biologists.\n\n\n\nIt is impossible to cover everything you might ever need! Different people will use different methods and tools. Topics have been chosen because they are: foundational, widely applicable and transferable conceptually.\n\n\n\nAfter this workshop the successful learner will be able to:\n\nFind their way around the RStudio windows\nCreate and plot data using ggplot\nExplain the rationale for scripting analysis\nKnow how to load packages\nUnderstand what is meant by the working directory, absolute and relative paths and be able to apply these concepts to data import\nSummarise data in a single group or in multiple groups\nDevelop highly organised analyses including well-commented scripts that can be understood by future you and others\n\n\n\n\nEmma Rand is a Professor in the Department of Biology at the University of York where she specialises in teaching data science and reproducibility, particularly to those who do not see themselves as programmers. She leads UKRI funded projects called Cloud-SPAN and the UKRI Digital Research Skills Catalyst that train the research workforce in digital research skills using Findable, Accessible, Interoperable and Reusable (FAIR) materials."
-  },
-  {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Welcome",
-    "section": "",
-    "text": "An increase in the complexity and scale of biological data means biologists are increasingly required to develop the data skills needed to design reproducible workflows for the simulation, collection, organisation, processing, analysis and presentation of data. Developing such data skills requires at least some coding, also known as scripting. This makes your work (everything you do with your raw data) explicitly described, totally transparent and completely reproducible. However, learning to code can be a daunting prospect for many biologists! That’s where Reproducibility with R comes in!\nR is a free and open source language especially well-suited to data analysis and visualisation and has a relatively inclusive and newbie-friendly community. R caters to users who do not see themselves as programmers, but then allows them to slide gradually into programming.\nThis workshop will introduce you to R and RStudio, the most widely used interface for working with R. You will learn how to import data, manipulate it, summarise it and plot it. You will learn how to use an organised project-oriented workflow with well commented scripts so that you can understand your work in the future, and share it with others. In addition, you will learn what a working directory and a file path are - these are key concepts in computing generally but ones which are often not taught to biologists."
-  },
-  {
-    "objectID": "index.html#philosophy-and-approach",
-    "href": "index.html#philosophy-and-approach",
-    "title": "Welcome",
-    "section": "",
-    "text": "It is impossible to cover everything you might ever need! Different people will use different methods and tools. Topics have been chosen because they are: foundational, widely applicable and transferable conceptually."
-  },
-  {
-    "objectID": "index.html#learning-outcomes",
-    "href": "index.html#learning-outcomes",
-    "title": "Welcome",
-    "section": "",
-    "text": "After this workshop the successful learner will be able to:\n\nFind their way around the RStudio windows\nCreate and plot data using ggplot\nExplain the rationale for scripting analysis\nKnow how to load packages\nUnderstand what is meant by the working directory, absolute and relative paths and be able to apply these concepts to data import\nSummarise data in a single group or in multiple groups\nDevelop highly organised analyses including well-commented scripts that can be understood by future you and others"
-  },
-  {
-    "objectID": "index.html#about-the-instructor",
-    "href": "index.html#about-the-instructor",
-    "title": "Welcome",
-    "section": "",
-    "text": "Emma Rand is a Professor in the Department of Biology at the University of York where she specialises in teaching data science and reproducibility, particularly to those who do not see themselves as programmers. She leads UKRI funded projects called Cloud-SPAN and the UKRI Digital Research Skills Catalyst that train the research workforce in digital research skills using Findable, Accessible, Interoperable and Reusable (FAIR) materials."
-  },
-  {
-    "objectID": "prerequisites.html",
-    "href": "prerequisites.html",
-    "title": "Prerequisites",
-    "section": "",
-    "text": "Pre-course instructions for participants\nYou do not need any prior experience of R or RStudio.\nThere are Windows PCs at the venue and you are not required to bring your own machine. Participants from outside of York will be provided with a temporary IT account. However, if you prefer to work on your own machine please install the following prior to attending:\n\nR version 4.4.1 or higher:https://cloud.r-project.org/\nRStudio Version: 2024.12.1+563 or higher: https://posit.co/download/rstudio-desktop/\nThese R packages from CRAN: tidyverse, devtools. Once you have installed R and RStudio, start RStudio up and go to the Packages tab in the bottom right pane; click Install and type the name of the package you want to install in the box that appears. Then wait until you get the cursor (&gt;) back in the console window.\nTinyTeX: Once you have installed R and RStudio, start RStudio up and go to the Terminal (lower left, behind the console) and type: quarto install tinytex and press enter."
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html",
-    "href": "materials/introduction-to-r-and-rstudio.html",
-    "title": "Introduction to R and RStudio",
-    "section": "",
-    "text": "Finding your way round RStudio\nTyping in data and plotting it\nImporting data: working directories and paths"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#rstudio-live-demonstration",
-    "href": "materials/introduction-to-r-and-rstudio.html#rstudio-live-demonstration",
-    "title": "Introduction to R and RStudio",
-    "section": "RStudio: live demonstration",
-    "text": "RStudio: live demonstration\n\nthe panels\n\nTop left: Script - write and edit code and comments to keep\nBottom left: Console - where commands get executed and can be typed\nTop right: Environment - where you can see the objects you have created; History - of commands\nBottom right: Files - a file explorer; Plots; Packages; Help\n\n\n\nmaking yourself comfortable\ntyping in the console sending commands\nusing R as a calculator\nassigning values\nwhere to see objects\nusing a script - make sure to execute\ncomments #\ndata types and structures\nfunctions c()\n\ntypes of R files: .R, .RData .RHistory"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#overview-of-demonstration",
-    "href": "materials/introduction-to-r-and-rstudio.html#overview-of-demonstration",
-    "title": "Introduction to R and RStudio",
-    "section": "Overview of demonstration",
-    "text": "Overview of demonstration\nThere are several ways you can recap the demo at a later date:\n🖼️ Refer to this infographic Full size RStudio Anatomy\n\n\ninfographic\n\n📖 Read First Steps in RStudio\n📹 Watch"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#the-goal-plot",
-    "href": "materials/introduction-to-r-and-rstudio.html#the-goal-plot",
-    "title": "Introduction to R and RStudio",
-    "section": "The goal 🐈 plot",
-    "text": "The goal 🐈 plot\nWe will work with some data on the coat colour of 62 cats. You are going to type data in R, summarise and plot it\nThe data are as a frequency table:\n\n\n\nFrequency of coat colours in 62 cats\n\nCoat colour\nNo. cats\n\n\n\nblack\n23\n\n\nwhite\n15\n\n\ntabby\n8\n\n\nginger\n10\n\n\ntortoiseshell\n5\n\n\ncalico\n1\n\n\n\n\n\nYou will create a figure like this:"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#getting-set-up",
-    "href": "materials/introduction-to-r-and-rstudio.html#getting-set-up",
-    "title": "Introduction to R and RStudio",
-    "section": "Getting set up",
-    "text": "Getting set up\n🎬 In RStudio do File | New project | New directory. Be purposeful about where you create it and name it. I suggest cats-1\n🎬 Make a new script and save it as type-data-and-plot.R to carry out the rest of the work."
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#creating-the-data",
-    "href": "materials/introduction-to-r-and-rstudio.html#creating-the-data",
-    "title": "Introduction to R and RStudio",
-    "section": "Creating the data",
-    "text": "Creating the data\nStart by making a vector called coat that holds coat colours\n🎬 Write the following in your script:\n\n# coat colours\ncoat &lt;- c(\"black\", \"white\", \"tabby\", \"ginger\", \"tortoiseshell\", \"calico\")\n\nThe shortcut for &lt;- is Alt+- (hold the Alt key down then hit the minus key ).\nEnsure your cursor is on the line with the command and do Control+Enter to send the command to the console to be executed.\nI have used a comment. Comment your code as much as possible!\n🛝 Create a vector called freq containing the numbers of cats with each coat colour\n\nAnswer - don’t look until you have tried!# numbers of cats with each coat colour\nfreq &lt;- c(23, 15, 8, 10, 5, 1)"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#packages",
-    "href": "materials/introduction-to-r-and-rstudio.html#packages",
-    "title": "Introduction to R and RStudio",
-    "section": "Packages",
-    "text": "Packages\nCommands like c() and sum() are in packages which are part the ‘base’ R system. A package is a collection of related commands. Base packages are installed automatically when you install R.\nOther packages, such as ggplot2 (Wickham 2016) need to be installed once, and then loaded each session. ggplot2 is one of the tidyverse (Wickham et al. 2019) packages.\n🎬 Load the tidyverse:\n\nlibrary(tidyverse)\n\nYou will likely be warned of some function name conflicts but these will not be a problem for you."
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#plotting-the-data-with-ggplot",
-    "href": "materials/introduction-to-r-and-rstudio.html#plotting-the-data-with-ggplot",
-    "title": "Introduction to R and RStudio",
-    "section": "Plotting the data with ggplot()\n",
-    "text": "Plotting the data with ggplot()\n\n\n\nggplot() takes a dataframe for an argument\nWe can make a dataframe of the two vectors, coat and freq using the data.frame() function.\n\n🎬 Make a dataframe called coat_data\n\ncoat_data &lt;- data.frame(coat, freq)\n\n🎬 Click on coat_data in the Environment to open a spreadsheet-like view of it.\n🎬 Create a simple barplot using ggplot like this:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col()\n\n\n\n\n\n\n\n\n\nggplot() alone creates a blank plot.\n\nggplot(data = coat_data) looks the same.\n\naes() gives the ‘Aesthetic mappings’. How variables (columns) are mapped to visual properties (aesthetics) e.g., axes, colour, shapes.\nThus ggplot(data = coat_data, aes(x = coat, y = freq)) produces a plot with axes\n\ngeom_col: A ‘Geom’ (Geometric object) gives the visual representations of the data: points, lines, bars, boxplots etc.\n\nNote that ggplot2 is the name of the package and ggplot() is its most important command."
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#using-the-help-manual",
-    "href": "materials/introduction-to-r-and-rstudio.html#using-the-help-manual",
-    "title": "Introduction to R and RStudio",
-    "section": "Using the help manual",
-    "text": "Using the help manual\nThe manual tells us about a function. ‘Arguments’ can be added to the geom_col() command inside the brackets.\nCommands do something and their arguments (in brackets) and can specify:\n\nwhat object to do it to\nhow exactly to do it\n\nMany arguments have defaults so you don’t always need to supply them.\n🎬 Open the manual page for geom_col() using:\n\n?geom_col\n\nThe manual page has several sections.\n\n\nDescription an overview of what the command does\n\nUsage lists arguments\n\nform: argument name = default value\nsome arguments MUST be supplied others have defaults\n\n... means etc and includes arguments that can be passed to many ‘geoms’\n\n\n\nArguments gives the detail about the arguments\n\nDetails describes how the command works in more detail\n\nValue gives the output of the command\nDon’t be too perturbed by not fully understanding the information\n\n\nAesthetics geom_col() understands the following aesthetics. Required aesthetics are displayed in bold and defaults are displayed for optional aesthetics:\n\nx\ny\nalpha → NA\ncolour → via theme()\nfill → via theme()\ngroup → inferred\nlinetype → via theme()\nlinewidth → via theme()\nwidth → 0.9"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#customising-a-plot",
-    "href": "materials/introduction-to-r-and-rstudio.html#customising-a-plot",
-    "title": "Introduction to R and RStudio",
-    "section": "Customising a plot",
-    "text": "Customising a plot\nBar colour\n🎬 Change the fill of the bars using fill:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\")\n\n\n\n\n\n\n\nColours can be given by their name, “lightblue” or code, “#ADD8E6”.\nLook up by name or code\n🎬 Change the bars to a colour you like.\nfill is one of the arguments covered by .... fill is an ‘aesthetic’. If you look for ... in the list of arguments you will see it says:\n\nOther arguments passed on to layer(). These are often aesthetics, used to set an aesthetic to a fixed value, like colour = “red” or size = 3. They may also be parameters to the paired geom/stat.\n\nWe just set the fill aesthetic to a fixed value.\nFurther down the manual, there is a section on Aesthetics which lists those understood by geom_col()\nWe can set (map) the fill aesthetic to a fixed colour inside geom_col() or map it to a variable from the dataframe inside the aes() instead. This means the colour will be different for different values in that variable.\n🎬 Map the fill aesthetic to the coat variable:\n\nggplot(data = coat_data, aes(x = coat, y = freq, fill = coat)) +\n  geom_col()\n\n\n\n\n\n\n\nNote that we have taken fill = \"lightblue\" out of the geom_col() and instead put fill = coat in the aes().\n🛝 Use the manual to change the colour of the lines around each bar to black.\n\nAnswer - don’t look until you have tried!ggplot(data = coat_data,\n       aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\")\n\n\n\n\n\n\n\nChanging the axes\nWe can make changes to the axes using:\n\nChanges to a discrete x axis: scale_x_discrete()\n\nChanges to a continuous y axis: scale_y_continuous()\n\n\nggplot automatically extends the axes slightly. You can turn this behaviour off with the expand argument in scale_x_discrete() and scale_y_continuous().1\n🎬 To remove the gap between the axes and the data:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\") +\n  scale_x_discrete(expand = c(0, 0)) + \n  scale_y_continuous(expand = c(0, 0)) \n\n\n\n\n\n\n\nEach ‘layer’ is added to the ggplot() command with a +\n\n\n\n\n\n\nTipTop Tip\n\n\n\nMake your code easier to read by using white space and new lines\n\nput spaces around = , -&gt; and after ,\n\nuse a newline after every comma in a command with lots of arguments\n\n\n\n🛝 Look up scale_x_discrete in the manual and work out how to change the axis title from “coat” to “Coat colour”. Also change the y-axis title.\n\nAnswer - don’t look until you have tried!ggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\") +\n  scale_x_discrete(expand = c(0, 0),\n                   name = \"Coat colour\") + \n  scale_y_continuous(expand = c(0, 0),\n                     name = \"Number of cats\") \n\n\n\n\n\n\n\n🎬 I would prefer to see the y-axis extend a little beyond the data and we can change the axis “limits” in the scale_y_continuous()\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\") +\n  scale_x_discrete(expand = c(0, 0),\n                   name = \"Coat colour\") + \n  scale_y_continuous(expand = c(0, 0),\n                     name = \"Number of cats\",\n                     limits = c(0, 25)) \n\n\n\n\n\n\n\nGetting rid of the grey background\nThe grey grid background is useful for examining plots on a screen but for a report or publication you will want a more scientific style. Every aspect of the “theme” of a plot - the non-data elements such as fonts, background colours, axis line colours etc - can be controlled individually2 but there are some handy built in themes that apply several changes at once. One of these is theme_classic()\n🎬 Add theme_classic() to the plot:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(colour = \"black\",\n           fill = \"lightblue\") +\n  scale_x_discrete(expand = c(0, 0),\n                   name = \"Coat colour\") + \n  scale_y_continuous(expand = c(0, 0),\n                     name = \"Number of cats\",\n                     limits = c(0, 25)) +\n  theme_classic()"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#the-goal",
-    "href": "materials/introduction-to-r-and-rstudio.html#the-goal",
-    "title": "Introduction to R and RStudio",
-    "section": "The goal",
-    "text": "The goal"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#getting-set-up-1",
-    "href": "materials/introduction-to-r-and-rstudio.html#getting-set-up-1",
-    "title": "Introduction to R and RStudio",
-    "section": "Getting set up",
-    "text": "Getting set up\n\n🎬 In RStudio do File | New project | New directory Be purposeful about where you create it and name it. I suggest cats-2\n🎬 Make a new script and save it as import-data-and-summarise-plot.R.\n🎬 Save this file to your cats-2 folder: The coat colour and mass of 62 cats - cat-coats.csv"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#learning-about-working-directories-and-paths",
-    "href": "materials/introduction-to-r-and-rstudio.html#learning-about-working-directories-and-paths",
-    "title": "Introduction to R and RStudio",
-    "section": "Learning about working directories and paths",
-    "text": "Learning about working directories and paths\nReading in data from the Project folder cats-2\n\nCSV files can be read read in with core tidyverse (Wickham et al. 2019) functions.\n🎬 Load the packages\n\nlibrary(tidyverse)\n\nA .csv. extension suggests this is plain text file with comma separated columns. However, before we attempt to read it it, we should take a look at it. We can do this from RStudio\n🎬 Go to the Files pane (bottom right), click on the cat-coats.csv file and choose View File4\n🎬 Read in the csv file with:\n\ncats &lt;- read_csv(\"cat-coats.csv\")\n\nThe data from the file will be read into a dataframe called cats and you will be able to see it in the Environment.\nReading in data from a different folder\nTo help you understand relative file paths, we will now move the data file.\n🎬 First remove the dataframes you just created to make it easier to see whether you can successfully read in the files from a different place:\n\nrm(cats)\n\n🎬 Now make a new folder called data-raw. You can do this on the Files Pane by clicking New Folder and typing into the box that appears.\n🎬 Check the boxes next to the file names and choose More | Move… and select the data-raw folder.\nThe file will move. To import data from a file in the data-raw folder, you need to give the relative path to the file from the working directory. The working directory is the Project folder, cats-2 so the relative path is data-raw/cat-coats.csv\n🎬 Import the cat-coats.csv data like this:\n\ncats &lt;- read_csv(\"data-raw/cat-coats.csv\")"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#creating-a-boxplot",
-    "href": "materials/introduction-to-r-and-rstudio.html#creating-a-boxplot",
-    "title": "Introduction to R and RStudio",
-    "section": "Creating a boxplot",
-    "text": "Creating a boxplot\n🎬 Create a simple barplot using ggplot like this:\n\nggplot(data = cats, aes(x = coat, y = mass)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n🛝 Can you format the boxplot as shown above?\n\nAnswer - don’t look until you have tried!ggplot(data = cats, aes(x = coat, y = mass)) +\n  geom_boxplot() +\n  scale_y_continuous(name = \"Mass (g)\", \n                     limits = c(0, 10), \n                     expand = c(0, 0)) +\n  scale_x_discrete(name = \"Coat colour\") +\n  theme_classic()"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#rstudio-interface",
-    "href": "materials/introduction-to-r-and-rstudio.html#rstudio-interface",
-    "title": "Introduction to R and RStudio",
-    "section": "🔧 RStudio Interface",
-    "text": "🔧 RStudio Interface\n\nScript – Where you write and save your code (.R or .qmd files)\nConsole – Where commands are executed and immediate output appears\nEnvironment – Lists your objects and data\nFiles / Plots / Help – Where you can manage files, view plots, read help docs"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#core-ideas",
-    "href": "materials/introduction-to-r-and-rstudio.html#core-ideas",
-    "title": "Introduction to R and RStudio",
-    "section": "🧠 Core ideas",
-    "text": "🧠 Core ideas\n\nAssignment – Use &lt;- to store values: x &lt;- 5\n\nVectors – One-dimensional data: c(1, 2, 3)\n\nDataframes – Table-like structures that are most widely used: data.frame(name = c(\"A\", \"B\"))\n\nFunctions – Commands that perform actions: mean(x), ggplot()\n\nData import functions read data from files to dataframes for analysis\nPackages like tidyverse are loaded with library()\n\nAlways use RStudio Projects and paths relative to the project folder so your code is reproducible and portable"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#plotting-with-ggplot2",
-    "href": "materials/introduction-to-r-and-rstudio.html#plotting-with-ggplot2",
-    "title": "Introduction to R and RStudio",
-    "section": "📊 Plotting with ggplot2\n",
-    "text": "📊 Plotting with ggplot2\n\n\nStructure – ggplot(data, aes(x, y)) + geom_*()\n\nCommon geoms – geom_col(), geom_boxplot(), geom_point()\n\nCustomize – fill, color, width, theme_classic()\n\nScales – Adjust axes with scale_*_continuous() or scale_*_discrete()\n\n\nPages made with R (R Core Team 2026), Quarto (Allaire et al. 2026), knitr (Xie 2025, 2015, 2014), kableExtra (Zhu 2024)"
-  },
-  {
-    "objectID": "materials/introduction-to-r-and-rstudio.html#footnotes",
-    "href": "materials/introduction-to-r-and-rstudio.html#footnotes",
-    "title": "Introduction to R and RStudio",
-    "section": "Footnotes",
-    "text": "Footnotes\n\nThere are also scale_x_continous() and scale_y_discrete() functions when you have those types of variable↩︎\nModify components of a theme↩︎\nPlain text files can be opened in notepad or other similar editor and still be readable.↩︎\nDo not be tempted to import data this way. Unless you are careful, your data import will not be scripted or will not be scripted correctly.↩︎"
-  },
-  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "Introduction to<br>Reproducibility with R",
@@ -434,6 +266,13 @@
     "text": "Extra exercises\n🛝 Make a folder called images and save these two images of the subspecies to it: canariensis.jpg and coelebs.jpg. Then add images of each of the chaffinch subspecies as a multi-panel figure in the introduction"
   },
   {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Prerequisites",
+    "section": "",
+    "text": "Pre-course instructions for participants\nYou do not need any prior experience of R or RStudio.\nThere are Windows PCs at the venue and you are not required to bring your own machine. Participants from outside of York will be provided with a temporary IT account. However, if you prefer to work on your own machine please install the following prior to attending:\n\nR version 4.4.1 or higher:https://cloud.r-project.org/\nRStudio Version: 2024.12.1+563 or higher: https://posit.co/download/rstudio-desktop/\nThese R packages from CRAN: tidyverse, devtools. Once you have installed R and RStudio, start RStudio up and go to the Packages tab in the bottom right pane; click Install and type the name of the package you want to install in the box that appears. Then wait until you get the cursor (&gt;) back in the console window.\nTinyTeX: Once you have installed R and RStudio, start RStudio up and go to the Terminal (lower left, behind the console) and type: quarto install tinytex and press enter."
+  },
+  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
@@ -474,5 +313,166 @@
     "title": "Schedule",
     "section": "Optional material",
     "text": "Optional material\nComputational Analysis for Bioscientists"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html",
+    "href": "materials/introduction-to-r-and-rstudio.html",
+    "title": "Introduction to R and RStudio",
+    "section": "",
+    "text": "Finding your way round RStudio\nTyping in data and plotting it\nImporting data: working directories and paths"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#rstudio-live-demonstration",
+    "href": "materials/introduction-to-r-and-rstudio.html#rstudio-live-demonstration",
+    "title": "Introduction to R and RStudio",
+    "section": "RStudio: live demonstration",
+    "text": "RStudio: live demonstration\n\nthe panels\n\nTop left: Script - write and edit code and comments to keep\nBottom left: Console - where commands get executed and can be typed\nTop right: Environment - where you can see the objects you have created; History - of commands\nBottom right: Files - a file explorer; Plots; Packages; Help\n\n\n\nmaking yourself comfortable\ntyping in the console sending commands\nusing R as a calculator\nassigning values\nwhere to see objects\nusing a script - make sure to execute\ncomments #\ndata types and structures\nfunctions c()\n\ntypes of R files: .R, .RData .RHistory"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#overview-of-demonstration",
+    "href": "materials/introduction-to-r-and-rstudio.html#overview-of-demonstration",
+    "title": "Introduction to R and RStudio",
+    "section": "Overview of demonstration",
+    "text": "Overview of demonstration\nThere are several ways you can recap the demo at a later date:\n🖼️ Refer to this infographic Full size RStudio Anatomy\n\n\ninfographic\n\n📖 Read First Steps in RStudio\n📹 Watch"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#the-goal-plot",
+    "href": "materials/introduction-to-r-and-rstudio.html#the-goal-plot",
+    "title": "Introduction to R and RStudio",
+    "section": "The goal 🐈 plot",
+    "text": "The goal 🐈 plot\nWe will work with some data on the coat colour of 62 cats. You are going to type data in R, summarise and plot it\nThe data are as a frequency table:\n\n\n\nFrequency of coat colours in 62 cats\n\nCoat colour\nNo. cats\n\n\n\nblack\n23\n\n\nwhite\n15\n\n\ntabby\n8\n\n\nginger\n10\n\n\ntortoiseshell\n5\n\n\ncalico\n1\n\n\n\n\n\nYou will create a figure like this:"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#getting-set-up",
+    "href": "materials/introduction-to-r-and-rstudio.html#getting-set-up",
+    "title": "Introduction to R and RStudio",
+    "section": "Getting set up",
+    "text": "Getting set up\n🎬 In RStudio do File | New project | New directory. Be purposeful about where you create it and name it. I suggest cats-1\n🎬 Make a new script and save it as type-data-and-plot.R to carry out the rest of the work."
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#creating-the-data",
+    "href": "materials/introduction-to-r-and-rstudio.html#creating-the-data",
+    "title": "Introduction to R and RStudio",
+    "section": "Creating the data",
+    "text": "Creating the data\nStart by making a vector called coat that holds coat colours\n🎬 Write the following in your script:\n\n# coat colours\ncoat &lt;- c(\"black\", \"white\", \"tabby\", \"ginger\", \"tortoiseshell\", \"calico\")\n\nThe shortcut for &lt;- is Alt+- (hold the Alt key down then hit the minus key ).\nEnsure your cursor is on the line with the command and do Control+Enter to send the command to the console to be executed.\nI have used a comment. Comment your code as much as possible!\n🛝 Create a vector called freq containing the numbers of cats with each coat colour\n\nAnswer - don’t look until you have tried!# numbers of cats with each coat colour\nfreq &lt;- c(23, 15, 8, 10, 5, 1)"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#packages",
+    "href": "materials/introduction-to-r-and-rstudio.html#packages",
+    "title": "Introduction to R and RStudio",
+    "section": "Packages",
+    "text": "Packages\nCommands like c() and sum() are in packages which are part the ‘base’ R system. A package is a collection of related commands. Base packages are installed automatically when you install R.\nOther packages, such as ggplot2 (Wickham 2016) need to be installed once, and then loaded each session. ggplot2 is one of the tidyverse (Wickham et al. 2019) packages.\n🎬 Load the tidyverse:\n\nlibrary(tidyverse)\n\nYou will likely be warned of some function name conflicts but these will not be a problem for you."
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#plotting-the-data-with-ggplot",
+    "href": "materials/introduction-to-r-and-rstudio.html#plotting-the-data-with-ggplot",
+    "title": "Introduction to R and RStudio",
+    "section": "Plotting the data with ggplot()\n",
+    "text": "Plotting the data with ggplot()\n\n\n\nggplot() takes a dataframe for an argument\nWe can make a dataframe of the two vectors, coat and freq using the data.frame() function.\n\n🎬 Make a dataframe called coat_data\n\ncoat_data &lt;- data.frame(coat, freq)\n\n🎬 Click on coat_data in the Environment to open a spreadsheet-like view of it.\n🎬 Create a simple barplot using ggplot like this:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col()\n\n\n\n\n\n\n\n\n\nggplot() alone creates a blank plot.\n\nggplot(data = coat_data) looks the same.\n\naes() gives the ‘Aesthetic mappings’. How variables (columns) are mapped to visual properties (aesthetics) e.g., axes, colour, shapes.\nThus ggplot(data = coat_data, aes(x = coat, y = freq)) produces a plot with axes\n\ngeom_col: A ‘Geom’ (Geometric object) gives the visual representations of the data: points, lines, bars, boxplots etc.\n\nNote that ggplot2 is the name of the package and ggplot() is its most important command."
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#using-the-help-manual",
+    "href": "materials/introduction-to-r-and-rstudio.html#using-the-help-manual",
+    "title": "Introduction to R and RStudio",
+    "section": "Using the help manual",
+    "text": "Using the help manual\nThe manual tells us about a function. ‘Arguments’ can be added to the geom_col() command inside the brackets.\nCommands do something and their arguments (in brackets) and can specify:\n\nwhat object to do it to\nhow exactly to do it\n\nMany arguments have defaults so you don’t always need to supply them.\n🎬 Open the manual page for geom_col() using:\n\n?geom_col\n\nThe manual page has several sections.\n\n\nDescription an overview of what the command does\n\nUsage lists arguments\n\nform: argument name = default value\nsome arguments MUST be supplied others have defaults\n\n... means etc and includes arguments that can be passed to many ‘geoms’\n\n\n\nArguments gives the detail about the arguments\n\nDetails describes how the command works in more detail\n\nValue gives the output of the command\nDon’t be too perturbed by not fully understanding the information\n\n\nAesthetics geom_col() understands the following aesthetics. Required aesthetics are displayed in bold and defaults are displayed for optional aesthetics:\n\nx\ny\nalpha → NA\ncolour → via theme()\nfill → via theme()\ngroup → inferred\nlinetype → via theme()\nlinewidth → via theme()\nwidth → 0.9"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#customising-a-plot",
+    "href": "materials/introduction-to-r-and-rstudio.html#customising-a-plot",
+    "title": "Introduction to R and RStudio",
+    "section": "Customising a plot",
+    "text": "Customising a plot\nBar colour\n🎬 Change the fill of the bars using fill:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\")\n\n\n\n\n\n\n\nColours can be given by their name, “lightblue” or code, “#ADD8E6”.\nLook up by name or code\n🎬 Change the bars to a colour you like.\nfill is one of the arguments covered by .... fill is an ‘aesthetic’. If you look for ... in the list of arguments you will see it says:\n\nOther arguments passed on to layer(). These are often aesthetics, used to set an aesthetic to a fixed value, like colour = “red” or size = 3. They may also be parameters to the paired geom/stat.\n\nWe just set the fill aesthetic to a fixed value.\nFurther down the manual, there is a section on Aesthetics which lists those understood by geom_col()\nWe can set (map) the fill aesthetic to a fixed colour inside geom_col() or map it to a variable from the dataframe inside the aes() instead. This means the colour will be different for different values in that variable.\n🎬 Map the fill aesthetic to the coat variable:\n\nggplot(data = coat_data, aes(x = coat, y = freq, fill = coat)) +\n  geom_col()\n\n\n\n\n\n\n\nNote that we have taken fill = \"lightblue\" out of the geom_col() and instead put fill = coat in the aes().\n🛝 Use the manual to change the colour of the lines around each bar to black.\n\nAnswer - don’t look until you have tried!ggplot(data = coat_data,\n       aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\")\n\n\n\n\n\n\n\nChanging the axes\nWe can make changes to the axes using:\n\nChanges to a discrete x axis: scale_x_discrete()\n\nChanges to a continuous y axis: scale_y_continuous()\n\n\nggplot automatically extends the axes slightly. You can turn this behaviour off with the expand argument in scale_x_discrete() and scale_y_continuous().1\n🎬 To remove the gap between the axes and the data:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\") +\n  scale_x_discrete(expand = c(0, 0)) + \n  scale_y_continuous(expand = c(0, 0)) \n\n\n\n\n\n\n\nEach ‘layer’ is added to the ggplot() command with a +\n\n\n\n\n\n\nTipTop Tip\n\n\n\nMake your code easier to read by using white space and new lines\n\nput spaces around = , -&gt; and after ,\n\nuse a newline after every comma in a command with lots of arguments\n\n\n\n🛝 Look up scale_x_discrete in the manual and work out how to change the axis title from “coat” to “Coat colour”. Also change the y-axis title.\n\nAnswer - don’t look until you have tried!ggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\") +\n  scale_x_discrete(expand = c(0, 0),\n                   name = \"Coat colour\") + \n  scale_y_continuous(expand = c(0, 0),\n                     name = \"Number of cats\") \n\n\n\n\n\n\n\n🎬 I would prefer to see the y-axis extend a little beyond the data and we can change the axis “limits” in the scale_y_continuous()\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(fill = \"lightblue\", \n           colour = \"black\") +\n  scale_x_discrete(expand = c(0, 0),\n                   name = \"Coat colour\") + \n  scale_y_continuous(expand = c(0, 0),\n                     name = \"Number of cats\",\n                     limits = c(0, 25)) \n\n\n\n\n\n\n\nGetting rid of the grey background\nThe grey grid background is useful for examining plots on a screen but for a report or publication you will want a more scientific style. Every aspect of the “theme” of a plot - the non-data elements such as fonts, background colours, axis line colours etc - can be controlled individually2 but there are some handy built in themes that apply several changes at once. One of these is theme_classic()\n🎬 Add theme_classic() to the plot:\n\nggplot(data = coat_data, aes(x = coat, y = freq)) +\n  geom_col(colour = \"black\",\n           fill = \"lightblue\") +\n  scale_x_discrete(expand = c(0, 0),\n                   name = \"Coat colour\") + \n  scale_y_continuous(expand = c(0, 0),\n                     name = \"Number of cats\",\n                     limits = c(0, 25)) +\n  theme_classic()"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#the-goal",
+    "href": "materials/introduction-to-r-and-rstudio.html#the-goal",
+    "title": "Introduction to R and RStudio",
+    "section": "The goal",
+    "text": "The goal"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#getting-set-up-1",
+    "href": "materials/introduction-to-r-and-rstudio.html#getting-set-up-1",
+    "title": "Introduction to R and RStudio",
+    "section": "Getting set up",
+    "text": "Getting set up\n\n🎬 In RStudio do File | New project | New directory Be purposeful about where you create it and name it. I suggest cats-2\n🎬 Make a new script and save it as import-data-and-summarise-plot.R.\n🎬 Save this file to your cats-2 folder: The coat colour and mass of 62 cats - cat-coats.csv"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#learning-about-working-directories-and-paths",
+    "href": "materials/introduction-to-r-and-rstudio.html#learning-about-working-directories-and-paths",
+    "title": "Introduction to R and RStudio",
+    "section": "Learning about working directories and paths",
+    "text": "Learning about working directories and paths\nReading in data from the Project folder cats-2\n\nCSV files can be read read in with core tidyverse (Wickham et al. 2019) functions.\n🎬 Load the packages\n\nlibrary(tidyverse)\n\nA .csv. extension suggests this is plain text file with comma separated columns. However, before we attempt to read it it, we should take a look at it. We can do this from RStudio\n🎬 Go to the Files pane (bottom right), click on the cat-coats.csv file and choose View File4\n🎬 Read in the csv file with:\n\ncats &lt;- read_csv(\"cat-coats.csv\")\n\nThe data from the file will be read into a dataframe called cats and you will be able to see it in the Environment.\nReading in data from a different folder\nTo help you understand relative file paths, we will now move the data file.\n🎬 First remove the dataframes you just created to make it easier to see whether you can successfully read in the files from a different place:\n\nrm(cats)\n\n🎬 Now make a new folder called data-raw. You can do this on the Files Pane by clicking New Folder and typing into the box that appears.\n🎬 Check the boxes next to the file names and choose More | Move… and select the data-raw folder.\nThe file will move. To import data from a file in the data-raw folder, you need to give the relative path to the file from the working directory. The working directory is the Project folder, cats-2 so the relative path is data-raw/cat-coats.csv\n🎬 Import the cat-coats.csv data like this:\n\ncats &lt;- read_csv(\"data-raw/cat-coats.csv\")"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#creating-a-boxplot",
+    "href": "materials/introduction-to-r-and-rstudio.html#creating-a-boxplot",
+    "title": "Introduction to R and RStudio",
+    "section": "Creating a boxplot",
+    "text": "Creating a boxplot\n🎬 Create a simple barplot using ggplot like this:\n\nggplot(data = cats, aes(x = coat, y = mass)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n🛝 Can you format the boxplot as shown above?\n\nAnswer - don’t look until you have tried!ggplot(data = cats, aes(x = coat, y = mass)) +\n  geom_boxplot() +\n  scale_y_continuous(name = \"Mass (g)\", \n                     limits = c(0, 10), \n                     expand = c(0, 0)) +\n  scale_x_discrete(name = \"Coat colour\") +\n  theme_classic()"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#rstudio-interface",
+    "href": "materials/introduction-to-r-and-rstudio.html#rstudio-interface",
+    "title": "Introduction to R and RStudio",
+    "section": "🔧 RStudio Interface",
+    "text": "🔧 RStudio Interface\n\nScript – Where you write and save your code (.R or .qmd files)\nConsole – Where commands are executed and immediate output appears\nEnvironment – Lists your objects and data\nFiles / Plots / Help – Where you can manage files, view plots, read help docs"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#core-ideas",
+    "href": "materials/introduction-to-r-and-rstudio.html#core-ideas",
+    "title": "Introduction to R and RStudio",
+    "section": "🧠 Core ideas",
+    "text": "🧠 Core ideas\n\nAssignment – Use &lt;- to store values: x &lt;- 5\n\nVectors – One-dimensional data: c(1, 2, 3)\n\nDataframes – Table-like structures that are most widely used: data.frame(name = c(\"A\", \"B\"))\n\nFunctions – Commands that perform actions: mean(x), ggplot()\n\nData import functions read data from files to dataframes for analysis\nPackages like tidyverse are loaded with library()\n\nAlways use RStudio Projects and paths relative to the project folder so your code is reproducible and portable"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#plotting-with-ggplot2",
+    "href": "materials/introduction-to-r-and-rstudio.html#plotting-with-ggplot2",
+    "title": "Introduction to R and RStudio",
+    "section": "📊 Plotting with ggplot2\n",
+    "text": "📊 Plotting with ggplot2\n\n\nStructure – ggplot(data, aes(x, y)) + geom_*()\n\nCommon geoms – geom_col(), geom_boxplot(), geom_point()\n\nCustomize – fill, color, width, theme_classic()\n\nScales – Adjust axes with scale_*_continuous() or scale_*_discrete()\n\n\nPages made with R (R Core Team 2026), Quarto (Allaire et al. 2026), knitr (Xie 2025, 2015, 2014), kableExtra (Zhu 2024)"
+  },
+  {
+    "objectID": "materials/introduction-to-r-and-rstudio.html#footnotes",
+    "href": "materials/introduction-to-r-and-rstudio.html#footnotes",
+    "title": "Introduction to R and RStudio",
+    "section": "Footnotes",
+    "text": "Footnotes\n\nThere are also scale_x_continous() and scale_y_discrete() functions when you have those types of variable↩︎\nModify components of a theme↩︎\nPlain text files can be opened in notepad or other similar editor and still be readable.↩︎\nDo not be tempted to import data this way. Unless you are careful, your data import will not be scripted or will not be scripted correctly.↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "An increase in the complexity and scale of biological data means biologists are increasingly required to develop the data skills needed to design reproducible workflows for the simulation, collection, organisation, processing, analysis and presentation of data. Developing such data skills requires at least some coding, also known as scripting. This makes your work (everything you do with your raw data) explicitly described, totally transparent and completely reproducible. However, learning to code can be a daunting prospect for many biologists! That’s where Reproducibility with R comes in!\nR is a free and open source language especially well-suited to data analysis and visualisation and has a relatively inclusive and newbie-friendly community. R caters to users who do not see themselves as programmers, but then allows them to slide gradually into programming.\nThis workshop will introduce you to R and RStudio, the most widely used interface for working with R. You will learn how to import data, manipulate it, summarise it and plot it. You will learn how to use an organised project-oriented workflow with well commented scripts so that you can understand your work in the future, and share it with others. In addition, you will learn what a working directory and a file path are - these are key concepts in computing generally but ones which are often not taught to biologists.\n\n\n\nIt is impossible to cover everything you might ever need! Different people will use different methods and tools. Topics have been chosen because they are: foundational, widely applicable and transferable conceptually.\n\n\n\nAfter this workshop the successful learner will be able to:\n\nFind their way around the RStudio windows\nCreate and plot data using ggplot\nExplain the rationale for scripting analysis\nKnow how to load packages\nUnderstand what is meant by the working directory, absolute and relative paths and be able to apply these concepts to data import\nSummarise data in a single group or in multiple groups\nDevelop highly organised analyses including well-commented scripts that can be understood by future you and others\n\n\n\n\nEmma Rand is a Professor in the Department of Biology at the University of York where she specialises in teaching data science and reproducibility, particularly to those who do not see themselves as programmers. She leads UKRI funded projects called Cloud-SPAN and the UKRI Digital Research Skills Catalyst that train the research workforce in digital research skills using Findable, Accessible, Interoperable and Reusable (FAIR) materials."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Welcome",
+    "section": "",
+    "text": "An increase in the complexity and scale of biological data means biologists are increasingly required to develop the data skills needed to design reproducible workflows for the simulation, collection, organisation, processing, analysis and presentation of data. Developing such data skills requires at least some coding, also known as scripting. This makes your work (everything you do with your raw data) explicitly described, totally transparent and completely reproducible. However, learning to code can be a daunting prospect for many biologists! That’s where Reproducibility with R comes in!\nR is a free and open source language especially well-suited to data analysis and visualisation and has a relatively inclusive and newbie-friendly community. R caters to users who do not see themselves as programmers, but then allows them to slide gradually into programming.\nThis workshop will introduce you to R and RStudio, the most widely used interface for working with R. You will learn how to import data, manipulate it, summarise it and plot it. You will learn how to use an organised project-oriented workflow with well commented scripts so that you can understand your work in the future, and share it with others. In addition, you will learn what a working directory and a file path are - these are key concepts in computing generally but ones which are often not taught to biologists."
+  },
+  {
+    "objectID": "index.html#philosophy-and-approach",
+    "href": "index.html#philosophy-and-approach",
+    "title": "Welcome",
+    "section": "",
+    "text": "It is impossible to cover everything you might ever need! Different people will use different methods and tools. Topics have been chosen because they are: foundational, widely applicable and transferable conceptually."
+  },
+  {
+    "objectID": "index.html#learning-outcomes",
+    "href": "index.html#learning-outcomes",
+    "title": "Welcome",
+    "section": "",
+    "text": "After this workshop the successful learner will be able to:\n\nFind their way around the RStudio windows\nCreate and plot data using ggplot\nExplain the rationale for scripting analysis\nKnow how to load packages\nUnderstand what is meant by the working directory, absolute and relative paths and be able to apply these concepts to data import\nSummarise data in a single group or in multiple groups\nDevelop highly organised analyses including well-commented scripts that can be understood by future you and others"
+  },
+  {
+    "objectID": "index.html#about-the-instructor",
+    "href": "index.html#about-the-instructor",
+    "title": "Welcome",
+    "section": "",
+    "text": "Emma Rand is a Professor in the Department of Biology at the University of York where she specialises in teaching data science and reproducibility, particularly to those who do not see themselves as programmers. She leads UKRI funded projects called Cloud-SPAN and the UKRI Digital Research Skills Catalyst that train the research workforce in digital research skills using Findable, Accessible, Interoperable and Reusable (FAIR) materials."
   }
 ]
