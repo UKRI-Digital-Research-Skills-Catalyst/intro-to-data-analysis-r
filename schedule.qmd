@@ -4,36 +4,66 @@ toc: true
 toc-location: right
 ---
 
-## 0900 - 1000
+# Day 1
 
-[Introduction and Principles of
-reproducibility](materials/principles-of-reproducibility.qmd)
+## 10:00–12:30
 
--   Introduction
--   Principles of reproducibility
+### [What they forgot to teach you about computers](materials/what-they-forgot-to-teach-you-about-computers.qmd)
 
-[Introduction to R and
-RStudio](materials/introduction-to-r-and-rstudio.qmd)
+- File systems and directories
+- File types
+- Root, home and working directories
+- Absolute and relative file paths
 
--   Finding your way round RStudio
--   Typing in data and plotting it
+### [Introduction to R and RStudio](materials/introduction-to-r-and-rstudio.qmd)
 
-## 1000 - 1030 Break 30 mins
+- Finding your way around RStudio
+- RStudio Projects and scripts
+- Basic R data types and objects
+- Creating your first graph
 
-## 1030 – 1200
+## 12:30–13:30 Lunch
 
-[Introduction to R and
-RStudio](materials/introduction-to-r-and-rstudio.qmd) continued
+## 13:30–16:00
 
--   Importing data
--   Working directories and file paths
+### [Types of variables, summarising and plotting distributions](materials/types-of-variables-summarising-and-plotting-distributions.qmd)
 
-## 1400 – 1500
+- Continuous and discrete variables
+- Summary statistics
+- Data visualisation with **ggplot2**
+- Importing data from text and Excel files
+- Working with file paths and working directories
 
-[Reproducible reports with
-quarto](materials/reproducible-reports-with-quarto.qmd)
+---
 
-## Optional material
+# Day 2
 
-[Computational Analysis for
-Bioscientists](https://3mmarand.github.io/comp4biosci/)
+## 10:00–12:30
+
+### [Summarising data with several variables](materials/summarising-data-with-several-variables.qmd)
+
+- Response and explanatory variables
+- Grouped summaries
+- Visualising multivariable datasets
+- Principles of tidy data
+- Simple data tidying
+- Saving publication-quality figures
+
+## 12:30–13:30 Lunch
+
+## 13:30–16:00
+
+### [Data organisation in spreadsheets](materials/data-organisation-in-spreadsheets.qmd)
+
+- Structuring spreadsheet data
+- Tidy data principles
+- Preparing data for analysis
+
+### [Reproducible R workflows](materials/reproducible-r-workflows.qmd)
+
+Choose one or more biological examples to explore and modify:
+
+- qPCR analysis
+- RNA sequencing analysis
+- Flow cytometry analysis
+- ImageJ workflows
