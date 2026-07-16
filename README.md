@@ -50,23 +50,27 @@ Topics include:
 - producing publication-quality graphics
 - exploring and modifying reproducible workflows for biological data analysis, including examples from qPCR, RNA sequencing, flow cytometry, and ImageJ
 
-## Programme
+### Programme 
 
-### Day 1
+The workshop takes place over two days and combines teaching with live coding.
 
-| Time | Session | Description |
-|------|---------|-------------|
-| 10:00–12:30 | What they forgot to teach you about computers | File systems, file types, working directories, paths, and project organisation. Introduction to R, RStudio, scripts, RStudio Projects, basic data types, and creating your first graph. |
-| 12:30–13:30 | Lunch | |
-| 13:30–16:00 | Types of variables, summarising and plotting distributions | Continuous and discrete variables, summary statistics, visualisation, importing text and Excel files, and developing confidence with working directories and file paths. |
-
-### Day 2
+**Day One** 
 
 | Time | Session | Description |
-|------|---------|-------------|
-| 10:00–12:30 | Summarising data with several variables | Working with datasets containing multiple variables, identifying response and explanatory variables, tidy data principles, simple data tidying, and saving publication-quality figures. |
-| 12:30–13:30 | Lunch | |
-| 13:30–16:00 | Data organisation in spreadsheets and R workflows | Recognising the underlying structure of data and arranging spreadsheets into tidy formats for analysis. Exploring and modifying workflows for qPCR analysis, RNA sequencing analysis, flow cytometry analysis, or ImageJ-derived datasets. |
+|--|----|----|
+| 10:00 - 12:30 | **What they forgot to teach you about computers** | File system organisation, file types, working directories and paths.|
+|  | **Introduction to R, RStudio and project organisation.** | You will learn about data types such as “numerics” and “characters” and object types such as “vectors” and “dataframes” and create your first graph! These are the building blocks for the rest of your R journey. You will also learn about the layout of RStudio and a workflow using scripts and RStudio Projects to keep your work organised.|
+| 12:30 - 13:30 |  | Lunch |
+| 13:30 - 16:00 | **Types of variable, summarising and plotting distributions** | Revise the difference between continuous and discrete values and how we summarise and visualise them. Importing data from text files and excel files and developing your understanding of working directories and paths. |
+
+**Day Two**         
+
+| Time | Session | Description |
+|--|----|----|
+| 10:00–12:30           | **Summarising data with several variables** | Building on the previous day's work exploring single variables, you will learn how to summarise and visualise datasets containing multiple variables. You will identify response and explanatory variables, explore the principles of "tidy" data, carry out a simple data tidying exercise, and learn how to save figures for publication and reporting. |
+| 12:30–13:30           | **Lunch**                                   |    |                                                                                                                                                                                                        
+| 13:30–16:00           | **Data organisation in spreadsheets**       | Learn how to recognise the underlying structure of your data and arrange it in a ‘tidy’ format to make your life easier. | 
+|            | **R workflows**       | Explore and modify workflows for qPCR analysis, RNA sequence analysis, flow  cytometry analysis or ImageJ files. | 
 
 ## Audience
 
@@ -80,24 +84,42 @@ It is suitable for:
 - participants with little or no prior programming experience
 - anyone who has attempted to learn R independently but found file management, working directories, data organisation, or coding workflows challenging
 
-## Prerequisites
+### Audience
+
+This workshop is designed for researchers, technical staff, and postgraduate students in the life sciences who want to develop practical data analysis skills using R and RStudio.
+
+The course is  suitable for:
+
+- PhD students, postdoctoral researchers, research assistants, and laboratory technicians working with biological data.
+- Academic staff and industry scientists seeking to improve the reproducibility and efficiency of their data analysis workflows.
+- Researchers who currently use spreadsheets or point-and-click software and want to transition to code-based analysis.
+- Participants with little or no prior programming experience who need a supportive introduction to scientific computing concepts.
+- Anyone who has attempted to learn R independently but found file management, working directories, data organisation, or coding workflows challenging.
+
+### Prerequisites
 
 No previous programming experience is required.
 
-Windows PCs will be available at the venue, and participants are **not** required to bring their own computer. Participants from outside the University of York will be provided with a temporary IT account.
+There are Windows PCs at the venue and you are not required to bring your own machine. Participants from outside of York will be provided with a temporary IT account.
 
-Participants who prefer to use their own machine should install the following before attending:
+### What you will learn
 
-- **R** version **4.4.1** or later: <https://cloud.r-project.org/>
-- **RStudio Desktop** version **2024.12.1+563** or later: <https://posit.co/download/rstudio-desktop/>
-- CRAN packages:
-  - `tidyverse`
-  - `devtools`
-- TinyTeX by running the following command from the RStudio Terminal:
+After this workshop the successful learner will be able to:
 
-```bash
-quarto install tinytex
-```
+- explain what an operating system is and the organisation of files and directories in a file system
+- explain root, home and working directories along with absolute and relative file paths
+- find their way around the RStudio windows, use an RStudio Project to organise work and a script to run commands
+- use the R command line to create and use the basic data types in R
+- distinguish between continuous and discrete variables and be able to appropriately summarise and plot them in R import data in to RStudio from a variety of file types
+- explain what is meant by ‘tidy’ data and organise data in spreadsheets.
+- customise and save publication quality figures
+- Use and modify R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files
+
+### Venue
+
+The workshop will take place in the department of Biology at the University of York. 
+
+Room B/R/012 (PC classroom) is located on the Ground Floor of Biology Block R in the Biomedical and Natural Sciences Building at the University of York's Campus West. Use the [University of York Campus Map](https://www.york.ac.uk/map/) for directions. 
 
 ## Repository contents
 
@@ -108,12 +130,6 @@ This repository contains the complete workshop materials, including:
 - exercises and solutions
 - supporting images and figures
 - reproducible workflows used throughout the workshop
-
-## About the instructor
-
-Emma Rand is a Professor in the Department of Biology at the University of York, where she specialises in teaching data science and reproducibility, particularly to researchers who do not initially see themselves as programmers.
-
-She leads the UKRI-funded **Cloud-SPAN** and **Digital Research Skills Catalyst** projects, which develop and deliver FAIR training materials to support the research community in developing practical digital research skills.
 
 ## Citation
 
