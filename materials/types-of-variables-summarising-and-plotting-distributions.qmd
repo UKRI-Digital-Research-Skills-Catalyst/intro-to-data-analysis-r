@@ -1,6 +1,5 @@
 ---
-title: "Workshop"
-subtitle: "Types of variable, the normal distribution and summarising data"
+title: "Types of variable, the normal distribution and summarising data"
 toc: true
 toc-location: right
 ---
