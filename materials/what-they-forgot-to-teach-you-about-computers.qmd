@@ -4,8 +4,6 @@ toc: true
 toc-location: right
 ---
 
-# What they forgot to teach you about computers
-
 ## Why "What they forgot"?
 
 Most students grew up with the presence of digital technology and are
