@@ -7,7 +7,7 @@ toc-location: right
 ```{r}
 #| include: false
 library(tidyverse)
-library(ggplot)
+library(ggplot2)
 ```
 
 # Learning Outcomes
