@@ -1,6 +1,5 @@
 ---
-title: "Workshop"
-subtitle: "Summarising data in with several variables and the role of variables in analysis"
+title: "Summarising data in with several variables and the role of variables in analysis"
 toc: true
 toc-location: right
 ---
