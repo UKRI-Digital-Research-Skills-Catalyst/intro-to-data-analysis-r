@@ -65,11 +65,15 @@ A tidy version stores all measurements in one column and records the group in an
 
 This format is much more flexible for analysis.
 
+# Import
+Save [seal.csv](data-raw/bloods.txt) to your `data-raw` folder.
+
 # Converting Data to Tidy Format
 
 The `tidyr` package provides the function `pivot_longer()`.
 
 ```{r}
+bloods <- read.table("data-raw/bloods.txt", header = T)
 bloods2 <- pivot_longer(
   data = bloods,
   cols = everything(),
