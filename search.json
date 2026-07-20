@@ -98,6 +98,83 @@
     "text": "Footnotes\n\n“Create a dataframe called seal_summary” means assign the output of the group_by() and summarise() code to something called seal_summary.↩︎"
   },
   {
+    "objectID": "materials/data-organisation-in-spreadsheets.html",
+    "href": "materials/data-organisation-in-spreadsheets.html",
+    "title": "Data Organisation in Spreadsheets",
+    "section": "",
+    "text": "After completing this session, you should be able to:\n\nExplain what tidy data is.\nRecognise untidy and tidy datasets.\nConvert data into tidy format using pivot_longer().\nUnderstand why tidy data makes analysis and visualisation easier.\nSummarise grouped data using group_by() and summarise()."
+  },
+  {
+    "objectID": "materials/data-organisation-in-spreadsheets.html#what-each-argument-does",
+    "href": "materials/data-organisation-in-spreadsheets.html#what-each-argument-does",
+    "title": "Data Organisation in Spreadsheets",
+    "section": "What Each Argument Does",
+    "text": "What Each Argument Does\n\n\nArgument\nPurpose\n\n\n\ndata\nDataset to reshape\n\n\ncols\nColumns to combine\n\n\nnames_to\nNew column containing the original column names\n\n\nvalues_to\nNew column containing the data values\n\n\n\nThe result is a tidy dataframe (technically a tibble)."
+  },
+  {
+    "objectID": "materials/data-organisation-in-spreadsheets.html#group-the-data",
+    "href": "materials/data-organisation-in-spreadsheets.html#group-the-data",
+    "title": "Data Organisation in Spreadsheets",
+    "section": "Group the Data",
+    "text": "Group the Data\ngroup_by(population)\nThis tells R to perform calculations separately for each population."
+  },
+  {
+    "objectID": "materials/data-organisation-in-spreadsheets.html#summarise-the-groups",
+    "href": "materials/data-organisation-in-spreadsheets.html#summarise-the-groups",
+    "title": "Data Organisation in Spreadsheets",
+    "section": "Summarise the Groups",
+    "text": "Summarise the Groups\nsummarise(\n  mean = mean(glucose)\n)\nThis calculates the mean glucose level for each population.\nThe pipe operator (%&gt;%) links these steps together:\n\nbloods2 %&gt;%\n  group_by(population) %&gt;%\n  summarise(mean = mean(glucose))\n\nError in `bloods2 %&gt;% group_by(population) %&gt;% summarise(mean = mean(glucose))`:\n! could not find function \"%&gt;%\"\n\n\nThis can be read as:\n\nTake the dataset → group it by population → calculate the mean for each group."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "File systems and directories\nFile types\nRoot, home and working directories\nAbsolute and relative file paths\n\n\n\n\n\nFinding your way around RStudio\nRStudio Projects and scripts\nBasic R data types and objects\nCreating your first graph\n\n\n\n\n\n\n\n\n\n\n\nContinuous and discrete variables\nSummary statistics\nData visualisation with ggplot2\nImporting data from text and Excel files\nWorking with file paths and working directories"
+  },
+  {
+    "objectID": "schedule.html#section",
+    "href": "schedule.html#section",
+    "title": "Schedule",
+    "section": "",
+    "text": "File systems and directories\nFile types\nRoot, home and working directories\nAbsolute and relative file paths\n\n\n\n\n\nFinding your way around RStudio\nRStudio Projects and scripts\nBasic R data types and objects\nCreating your first graph"
+  },
+  {
+    "objectID": "schedule.html#section-1",
+    "href": "schedule.html#section-1",
+    "title": "Schedule",
+    "section": "",
+    "text": "Continuous and discrete variables\nSummary statistics\nData visualisation with ggplot2\nImporting data from text and Excel files\nWorking with file paths and working directories"
+  },
+  {
+    "objectID": "schedule.html#section-2",
+    "href": "schedule.html#section-2",
+    "title": "Schedule",
+    "section": "10:00–12:30",
+    "text": "10:00–12:30\n\nSummarising data with several variables\n\nResponse and explanatory variables\nGrouped summaries\nVisualising multivariable datasets\nPrinciples of tidy data\nSimple data tidying\nSaving publication-quality figures"
+  },
+  {
+    "objectID": "schedule.html#lunch-1",
+    "href": "schedule.html#lunch-1",
+    "title": "Schedule",
+    "section": "12:30–13:30 Lunch",
+    "text": "12:30–13:30 Lunch"
+  },
+  {
+    "objectID": "schedule.html#section-3",
+    "href": "schedule.html#section-3",
+    "title": "Schedule",
+    "section": "13:30–16:00",
+    "text": "13:30–16:00\n\nData organisation in spreadsheets\n\nStructuring spreadsheet data\nTidy data principles\nPreparing data for analysis\n\n\n\nReproducible R workflows\nChoose one or more biological examples to explore and modify:\n\nqPCR analysis\nRNA sequencing analysis\nFlow cytometry analysis\nImageJ workflows"
+  },
+  {
+    "objectID": "prerequisites.html",
+    "href": "prerequisites.html",
+    "title": "Prerequisites",
+    "section": "",
+    "text": "Pre-course instructions for participants\nYou do not need any prior experience of R or RStudio.\nThere are Windows PCs at the venue and you are not required to bring your own machine. Participants from outside of York will be provided with a temporary IT account. However, if you prefer to work on your own machine please install the following prior to attending:\n\nR version 4.4.1 or higher:https://cloud.r-project.org/\nRStudio Version: 2024.12.1+563 or higher: https://posit.co/download/rstudio-desktop/\nThese R packages from CRAN: tidyverse, devtools. Once you have installed R and RStudio, start RStudio up and go to the Packages tab in the bottom right pane; click Install and type the name of the package you want to install in the box that appears. Then wait until you get the cursor (&gt;) back in the console window.\nTinyTeX: Once you have installed R and RStudio, start RStudio up and go to the Terminal (lower left, behind the console) and type: quarto install tinytex and press enter."
+  },
+  {
     "objectID": "materials/reproducible-reports-with-quarto.html",
     "href": "materials/reproducible-reports-with-quarto.html",
     "title": "Reproducible reports with Quarto",
@@ -313,55 +390,6 @@
     "title": "Reproducible reports with Quarto",
     "section": "Extra exercises",
     "text": "Extra exercises\n🛝 Make a folder called images and save these two images of the subspecies to it: canariensis.jpg and coelebs.jpg. Then add images of each of the chaffinch subspecies as a multi-panel figure in the introduction"
-  },
-  {
-    "objectID": "prerequisites.html",
-    "href": "prerequisites.html",
-    "title": "Prerequisites",
-    "section": "",
-    "text": "Pre-course instructions for participants\nYou do not need any prior experience of R or RStudio.\nThere are Windows PCs at the venue and you are not required to bring your own machine. Participants from outside of York will be provided with a temporary IT account. However, if you prefer to work on your own machine please install the following prior to attending:\n\nR version 4.4.1 or higher:https://cloud.r-project.org/\nRStudio Version: 2024.12.1+563 or higher: https://posit.co/download/rstudio-desktop/\nThese R packages from CRAN: tidyverse, devtools. Once you have installed R and RStudio, start RStudio up and go to the Packages tab in the bottom right pane; click Install and type the name of the package you want to install in the box that appears. Then wait until you get the cursor (&gt;) back in the console window.\nTinyTeX: Once you have installed R and RStudio, start RStudio up and go to the Terminal (lower left, behind the console) and type: quarto install tinytex and press enter."
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "File systems and directories\nFile types\nRoot, home and working directories\nAbsolute and relative file paths\n\n\n\n\n\nFinding your way around RStudio\nRStudio Projects and scripts\nBasic R data types and objects\nCreating your first graph\n\n\n\n\n\n\n\n\n\n\n\nContinuous and discrete variables\nSummary statistics\nData visualisation with ggplot2\nImporting data from text and Excel files\nWorking with file paths and working directories"
-  },
-  {
-    "objectID": "schedule.html#section",
-    "href": "schedule.html#section",
-    "title": "Schedule",
-    "section": "",
-    "text": "File systems and directories\nFile types\nRoot, home and working directories\nAbsolute and relative file paths\n\n\n\n\n\nFinding your way around RStudio\nRStudio Projects and scripts\nBasic R data types and objects\nCreating your first graph"
-  },
-  {
-    "objectID": "schedule.html#section-1",
-    "href": "schedule.html#section-1",
-    "title": "Schedule",
-    "section": "",
-    "text": "Continuous and discrete variables\nSummary statistics\nData visualisation with ggplot2\nImporting data from text and Excel files\nWorking with file paths and working directories"
-  },
-  {
-    "objectID": "schedule.html#section-2",
-    "href": "schedule.html#section-2",
-    "title": "Schedule",
-    "section": "10:00–12:30",
-    "text": "10:00–12:30\n\nSummarising data with several variables\n\nResponse and explanatory variables\nGrouped summaries\nVisualising multivariable datasets\nPrinciples of tidy data\nSimple data tidying\nSaving publication-quality figures"
-  },
-  {
-    "objectID": "schedule.html#lunch-1",
-    "href": "schedule.html#lunch-1",
-    "title": "Schedule",
-    "section": "12:30–13:30 Lunch",
-    "text": "12:30–13:30 Lunch"
-  },
-  {
-    "objectID": "schedule.html#section-3",
-    "href": "schedule.html#section-3",
-    "title": "Schedule",
-    "section": "13:30–16:00",
-    "text": "13:30–16:00\n\nData organisation in spreadsheets\n\nStructuring spreadsheet data\nTidy data principles\nPreparing data for analysis\n\n\n\nReproducible R workflows\nChoose one or more biological examples to explore and modify:\n\nqPCR analysis\nRNA sequencing analysis\nFlow cytometry analysis\nImageJ workflows"
   },
   {
     "objectID": "materials/introduction-to-r-and-rstudio.html",
