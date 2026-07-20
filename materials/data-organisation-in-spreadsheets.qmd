@@ -1,0 +1,183 @@
+---
+title: "Data Organisation in Spreadsheets"
+toc: true
+toc-location: right
+---
+
+# Learning Outcomes
+
+After completing this session, you should be able to:
+
+- Explain what tidy data is.
+- Recognise untidy and tidy datasets.
+- Convert data into tidy format using `pivot_longer()`.
+- Understand why tidy data makes analysis and visualisation easier.
+- Summarise grouped data using `group_by()` and `summarise()`.
+
+# What is Tidy Data?
+
+![Illustrations from the Openscapes blog Tidy Data for reproducibility, efficiency, and collaboration by Julia Lowndes and Allison Horst](images/tidy-data.jpg){fig-alt="Stylized text providing an overview of Tidy Data. The top reads 'Tidy data is a standard way of mapping the meaning of a dataset to its structure. - Hadley Wickham.' On the left reads 'In tidy data: each variable forms a column; each observation forms a row; each cell is a single measurement.' There is an example table on the lower right with columns ‘id’, ‘name’ and ‘color’ with observations for different cats, illustrating tidy data structure"}
+
+Tidy data is a standard way of organising data so that it is easy to analyse, visualise and model.
+
+A tidy dataset follows three simple rules:
+
+1. Each variable has its own column.
+2. Each observation has its own row.
+3. Each value has its own cell.
+
+This structure captures the meaning of the data and allows analysis tools to work consistently across different datasets.
+
+# Why Does Tidy Data Matter?
+
+Many datasets are stored in a way that is convenient for humans to read but difficult for computers to analyse.
+
+For example, measurements from different groups are often stored in separate columns.
+
+| Healthy | Diabetic |
+|---|---|
+| 5.2 | 9.8 |
+| 4.9 | 11.3 |
+| 5.5 | 10.7 |
+
+Although readable, this structure makes it harder to:
+
+- calculate summaries for multiple groups
+- produce visualisations
+- apply consistent analysis pipelines
+
+A tidy version stores all measurements in one column and records the group in another.
+
+| population | glucose |
+|---|---|
+| Healthy | 5.2 |
+| Healthy | 4.9 |
+| Healthy | 5.5 |
+| Diabetic | 9.8 |
+| Diabetic | 11.3 |
+| Diabetic | 10.7 |
+
+This format is much more flexible for analysis.
+
+# Converting Data to Tidy Format
+
+The `tidyr` package provides the function `pivot_longer()`.
+
+```{r}
+bloods2 <- pivot_longer(
+  data = bloods,
+  cols = everything(),
+  names_to = "population",
+  values_to = "glucose"
+)
+```
+
+## What Each Argument Does
+
+| Argument | Purpose |
+|---|---|
+| `data` | Dataset to reshape |
+| `cols` | Columns to combine |
+| `names_to` | New column containing the original column names |
+| `values_to` | New column containing the data values |
+
+The result is a tidy dataframe (technically a tibble).
+
+# Working with Tidy Data
+
+Once data is tidy, many tasks become straightforward.
+
+## Group the Data
+
+```r
+group_by(population)
+```
+
+This tells R to perform calculations separately for each population.
+
+## Summarise the Groups
+
+```r
+summarise(
+  mean = mean(glucose)
+)
+```
+
+This calculates the mean glucose level for each population.
+
+The pipe operator (`%>%`) links these steps together:
+
+```{r}
+bloods2 %>%
+  group_by(population) %>%
+  summarise(mean = mean(glucose))
+```
+
+This can be read as:
+
+> Take the dataset → group it by population → calculate the mean for each group.
+
+# Producing More Useful Summaries
+
+You can calculate several statistics at once.
+
+```{r}
+bloods2 %>%
+  group_by(population) %>%
+  summarise(
+    mean = mean(glucose),
+    n = length(glucose),
+    sd = sd(glucose),
+    se = sd / sqrt(n)
+  )
+```
+
+This produces:
+
+- sample size (`n`)
+- mean
+- standard deviation (`sd`)
+- standard error (`se`)
+
+All in a single summary table.
+
+# Why Tidy Data Improves Visualisation
+
+Because every observation is stored consistently, plotting becomes much simpler.
+
+For example, colouring by population only requires mapping the population variable to an aesthetic:
+
+```{r}
+ggplot(bloods2, aes(x = glucose, fill = population)) +
+  geom_histogram()
+```
+
+The same tidy dataset can also be used to create density plots, boxplots and many other visualisations without reorganising the data.
+
+# Key Takeaways
+
+- Tidy data has one variable per column, one observation per row and one value per cell.
+- Tidy datasets are easier to analyse, summarise and visualise.
+- `pivot_longer()` converts wide data into tidy (long) format.
+- `group_by()` and `summarise()` work naturally with tidy data.
+- Most packages in the tidyverse are designed to work with tidy datasets.
+
+# Check Your Understanding
+
+1. What are the three rules of tidy data?
+2. Why is storing groups in separate columns often considered untidy?
+3. What does `pivot_longer()` do?
+4. What is the purpose of `group_by()`?
+5. Which function is used to calculate summary statistics for each group?
+
+# Further Practice
+
+Using the blood glucose dataset:
+
+1. Convert the data into tidy format.
+2. Calculate the mean glucose level for each population.
+3. Add the sample size, standard deviation and standard error.
+4. Produce:
+   - a histogram coloured by population,
+   - a density plot,
+   - a boxplot comparing the two populations.
