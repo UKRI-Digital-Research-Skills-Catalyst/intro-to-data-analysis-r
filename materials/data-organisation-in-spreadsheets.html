@@ -154,6 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
   <li><a href="#what-is-tidy-data" id="toc-what-is-tidy-data" class="nav-link" data-scroll-target="#what-is-tidy-data">What is Tidy Data?</a></li>
   <li><a href="#why-does-tidy-data-matter" id="toc-why-does-tidy-data-matter" class="nav-link" data-scroll-target="#why-does-tidy-data-matter">Why Does Tidy Data Matter?</a></li>
+  <li><a href="#import" id="toc-import" class="nav-link" data-scroll-target="#import">Import</a></li>
   <li>
 <a href="#converting-data-to-tidy-format" id="toc-converting-data-to-tidy-format" class="nav-link" data-scroll-target="#converting-data-to-tidy-format">Converting Data to Tidy Format</a>
   <ul>
@@ -280,19 +281,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>This format is much more flexible for analysis.</p>
+</section><section id="import" class="level1"><h1>Import</h1>
+<p>Save <a href="data-raw/bloods.txt">seal.csv</a> to your <code>data-raw</code> folder.</p>
 </section><section id="converting-data-to-tidy-format" class="level1"><h1>Converting Data to Tidy Format</h1>
 <p>The <code>tidyr</code> package provides the function <code>pivot_longer()</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bloods2</span> <span class="op">&lt;-</span> <span class="fu">pivot_longer</span><span class="op">(</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bloods</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.table</a></span><span class="op">(</span><span class="st">"data-raw/bloods.txt"</span>, header <span class="op">=</span> <span class="cn">T</span><span class="op">)</span></span>
+<span><span class="va">bloods2</span> <span class="op">&lt;-</span> <span class="fu">pivot_longer</span><span class="op">(</span></span>
 <span>  data <span class="op">=</span> <span class="va">bloods</span>,</span>
 <span>  cols <span class="op">=</span> <span class="fu">everything</span><span class="op">(</span><span class="op">)</span>,</span>
 <span>  names_to <span class="op">=</span> <span class="st">"population"</span>,</span>
 <span>  values_to <span class="op">=</span> <span class="st">"glucose"</span></span>
 <span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error:
-! object 'bloods' not found</code></pre>
-</div>
 </div>
 <section id="what-each-argument-does" class="level2"><h2 class="anchored" data-anchor-id="what-each-argument-does">What Each Argument Does</h2>
 <table class="caption-top table">
@@ -323,21 +323,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section></section><section id="working-with-tidy-data" class="level1"><h1>Working with Tidy Data</h1>
 <p>Once data is tidy, many tasks become straightforward.</p>
 <section id="group-the-data" class="level2"><h2 class="anchored" data-anchor-id="group-the-data">Group the Data</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">group_by</span><span class="op">(</span><span class="va">population</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">group_by</span><span class="op">(</span><span class="va">population</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This tells R to perform calculations separately for each population.</p>
 </section><section id="summarise-the-groups" class="level2"><h2 class="anchored" data-anchor-id="summarise-the-groups">Summarise the Groups</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">summarise</span><span class="op">(</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">summarise</span><span class="op">(</span></span>
 <span>  mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">glucose</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This calculates the mean glucose level for each population.</p>
 <p>The pipe operator (<code>%&gt;%</code>) links these steps together:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bloods2</span> <span class="op">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bloods2</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">population</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">summarise</span><span class="op">(</span>mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">glucose</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error:
-! object 'bloods2' not found</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  population  mean
+  &lt;chr&gt;      &lt;dbl&gt;
+1 Diabetic    4.79
+2 Healthy     3.95</code></pre>
 </div>
 </div>
 <p>This can be read as:</p>
@@ -347,7 +350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section></section><section id="producing-more-useful-summaries" class="level1"><h1>Producing More Useful Summaries</h1>
 <p>You can calculate several statistics at once.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bloods2</span> <span class="op">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">bloods2</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">population</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu">summarise</span><span class="op">(</span></span>
 <span>    mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">glucose</span><span class="op">)</span>,</span>
@@ -355,9 +358,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span>    sd <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">glucose</span><span class="op">)</span>,</span>
 <span>    se <span class="op">=</span> <span class="va">sd</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error:
-! object 'bloods2' not found</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 5
+  population  mean     n    sd    se
+  &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
+1 Diabetic    4.79    30 0.760 0.139
+2 Healthy     3.95    30 0.871 0.159</code></pre>
 </div>
 </div>
 <p>This produces:</p>
@@ -372,11 +378,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Because every observation is stored consistently, plotting becomes much simpler.</p>
 <p>For example, colouring by population only requires mapping the population variable to an aesthetic:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">bloods2</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">glucose</span>, fill <span class="op">=</span> <span class="va">population</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">bloods2</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">glucose</span>, fill <span class="op">=</span> <span class="va">population</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_histogram</span><span class="op">(</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error:
-! object 'bloods2' not found</code></pre>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="data-organisation-in-spreadsheets_files/figure-html/unnamed-chunk-5-1.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="data-organisation-in-spreadsheets_files/figure-html/unnamed-chunk-5-1.svg" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 </div>
 </div>
 <p>The same tidy dataset can also be used to create density plots, boxplots and many other visualisations without reorganising the data.</p>
