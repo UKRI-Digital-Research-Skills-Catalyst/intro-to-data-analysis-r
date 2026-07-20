@@ -4,6 +4,12 @@ toc: true
 toc-location: right
 ---
 
+```{r}
+#| include: false
+library(tidyverse)
+library(ggplot)
+```
+
 # Learning Outcomes
 
 After completing this session, you should be able to:
