@@ -123,7 +123,7 @@
     "href": "materials/data-organisation-in-spreadsheets.html#summarise-the-groups",
     "title": "Data Organisation in Spreadsheets",
     "section": "Summarise the Groups",
-    "text": "Summarise the Groups\nsummarise(\n  mean = mean(glucose)\n)\nThis calculates the mean glucose level for each population.\nThe pipe operator (%&gt;%) links these steps together:\n\nbloods2 %&gt;%\n  group_by(population) %&gt;%\n  summarise(mean = mean(glucose))\n\nError in `bloods2 %&gt;% group_by(population) %&gt;% summarise(mean = mean(glucose))`:\n! could not find function \"%&gt;%\"\n\n\nThis can be read as:\n\nTake the dataset → group it by population → calculate the mean for each group."
+    "text": "Summarise the Groups\nsummarise(\n  mean = mean(glucose)\n)\nThis calculates the mean glucose level for each population.\nThe pipe operator (%&gt;%) links these steps together:\n\nbloods2 %&gt;%\n  group_by(population) %&gt;%\n  summarise(mean = mean(glucose))\n\nError:\n! object 'bloods2' not found\n\n\nThis can be read as:\n\nTake the dataset → group it by population → calculate the mean for each group."
   },
   {
     "objectID": "schedule.html",
