@@ -6,7 +6,7 @@ date: last-modified
 date-format: D MMMM, YYYY
 
 website:
-  title: "Introduction to<br>Reproducibility with R"
+  title: "Introduction to<br>Reproducible Data Analysis in R"
   favicon: images/logo_no_text_transparent.png
   page-footer:
     left: "<https://digitalskillscatalyst.ac.uk/>"
