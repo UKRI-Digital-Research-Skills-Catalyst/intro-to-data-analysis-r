@@ -8,7 +8,7 @@
 
 <meta name="author" content="Emma Rand">
 
-<title>Schedule – Introduction toReproducible Data Analysis in R</title>
+<title>Reproducible R Workflows – Introduction toReproducible Data Analysis in R</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,28 +27,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/logo_no_text_transparent.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9605bf2d142fdcc5bfe09bd12f0d3e05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9605bf2d142fdcc5bfe09bd12f0d3e05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-9605bf2d142fdcc5bfe09bd12f0d3e05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/logo_no_text_transparent.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9605bf2d142fdcc5bfe09bd12f0d3e05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9605bf2d142fdcc5bfe09bd12f0d3e05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9605bf2d142fdcc5bfe09bd12f0d3e05.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -88,11 +88,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo_transparent_background.png" alt="" class="navbar-logo light-content">
-    <img src="./images/logo_transparent_background.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo_transparent_background.png" alt="" class="navbar-logo light-content">
+    <img src="../images/logo_transparent_background.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Introduction to<br>Reproducible Data Analysis in R</span>
     </a>
   </div>
@@ -103,15 +103,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Welcome!</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./prerequisites.html"> 
+    <a class="nav-link" href="../prerequisites.html"> 
 <span class="menu-text">Before the course</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule and materials</span></a>
   </li>  
 </ul>
@@ -130,32 +130,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#day-1" id="toc-day-1" class="nav-link active" data-scroll-target="#day-1">Day 1</a>
-  <ul>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">10:00–12:30</a>
-  <ul class="collapse">
-  <li><a href="#what-they-forgot-to-teach-you-about-computers" id="toc-what-they-forgot-to-teach-you-about-computers" class="nav-link" data-scroll-target="#what-they-forgot-to-teach-you-about-computers">What they forgot to teach you about computers</a></li>
-  <li><a href="#introduction-to-r-and-rstudio" id="toc-introduction-to-r-and-rstudio" class="nav-link" data-scroll-target="#introduction-to-r-and-rstudio">Introduction to R and RStudio</a></li>
-  </ul></li>
-  <li><a href="#lunch" id="toc-lunch" class="nav-link" data-scroll-target="#lunch">12:30–13:30 Lunch</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">13:30–16:00</a>
-  <ul class="collapse">
-  <li><a href="#types-of-variables-summarising-and-plotting-distributions" id="toc-types-of-variables-summarising-and-plotting-distributions" class="nav-link" data-scroll-target="#types-of-variables-summarising-and-plotting-distributions">Types of variables, summarising and plotting distributions</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#day-2" id="toc-day-2" class="nav-link" data-scroll-target="#day-2">Day 2</a>
-  <ul>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">10:00–12:30</a>
-  <ul class="collapse">
-  <li><a href="#summarising-data-with-several-variables" id="toc-summarising-data-with-several-variables" class="nav-link" data-scroll-target="#summarising-data-with-several-variables">Summarising data with several variables</a></li>
-  </ul></li>
-  <li><a href="#lunch-1" id="toc-lunch-1" class="nav-link" data-scroll-target="#lunch-1">12:30–13:30 Lunch</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">13:30–16:00</a>
-  <ul class="collapse">
-  <li><a href="#data-organisation-in-spreadsheets" id="toc-data-organisation-in-spreadsheets" class="nav-link" data-scroll-target="#data-organisation-in-spreadsheets">Data organisation in spreadsheets</a></li>
-  <li><a href="#reproducible-r-workflows" id="toc-reproducible-r-workflows" class="nav-link" data-scroll-target="#reproducible-r-workflows">Reproducible R workflows</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#workflows" id="toc-workflows" class="nav-link active" data-scroll-target="#workflows">Workflows</a></li>
   </ul>
 </nav>
     </div>
@@ -164,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title">Reproducible R Workflows</h1>
 </div>
 
 
@@ -187,89 +162,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="day-1" class="level1">
-<h1>Day 1</h1>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">10:00–12:30</h2>
-<section id="what-they-forgot-to-teach-you-about-computers" class="level3">
-<h3 class="anchored" data-anchor-id="what-they-forgot-to-teach-you-about-computers"><a href="./materials/what-they-forgot-to-teach-you-about-computers.html">What they forgot to teach you about computers</a></h3>
+<section id="workflows" class="level1">
+<h1>Workflows</h1>
+<p>Below are four links to resources for biological analyses using R. Have a look and see if any are relevant to your work, and if so have a look and see if you can put together a rough script using the guides.</p>
 <ul>
-<li>File systems and directories</li>
-<li>File types</li>
-<li>Root, home and working directories</li>
-<li>Absolute and relative file paths</li>
+<li><a href="https://liz-is.github.io/qpcr-analysis-with-r/">qPCR analysis in R</a></li>
+<li><a href="https://jchellmuth.com/posts/FACS-with-R/">Flow cytometry data analysis in R</a></li>
+<li><a href="https://carpentries-incubator.github.io/bioc-rnaseq/">RNA-seq analysis in R</a></li>
+<li><a href="https://3mmarand.github.io/BIO00088H-data/images/images">ImageJ workflows</a></li>
 </ul>
-</section>
-<section id="introduction-to-r-and-rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="introduction-to-r-and-rstudio"><a href="./materials/introduction-to-r-and-rstudio.html">Introduction to R and RStudio</a></h3>
-<ul>
-<li>Finding your way around RStudio</li>
-<li>RStudio Projects and scripts</li>
-<li>Basic R data types and objects</li>
-<li>Creating your first graph</li>
-</ul>
-</section>
-</section>
-<section id="lunch" class="level2">
-<h2 class="anchored" data-anchor-id="lunch">12:30–13:30 Lunch</h2>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">13:30–16:00</h2>
-<section id="types-of-variables-summarising-and-plotting-distributions" class="level3">
-<h3 class="anchored" data-anchor-id="types-of-variables-summarising-and-plotting-distributions"><a href="./materials/types-of-variables-summarising-and-plotting-distributions.html">Types of variables, summarising and plotting distributions</a></h3>
-<ul>
-<li>Continuous and discrete variables</li>
-<li>Summary statistics</li>
-<li>Data visualisation with <strong>ggplot2</strong></li>
-<li>Importing data from text and Excel files</li>
-<li>Working with file paths and working directories</li>
-</ul>
-<hr>
-</section>
-</section>
-</section>
-<section id="day-2" class="level1">
-<h1>Day 2</h1>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">10:00–12:30</h2>
-<section id="summarising-data-with-several-variables" class="level3">
-<h3 class="anchored" data-anchor-id="summarising-data-with-several-variables"><a href="./materials/summarising-data-with-several-variables.html">Summarising data with several variables</a></h3>
-<ul>
-<li>Response and explanatory variables</li>
-<li>Grouped summaries</li>
-<li>Visualising multivariable datasets</li>
-<li>Principles of tidy data</li>
-<li>Simple data tidying</li>
-<li>Saving publication-quality figures</li>
-</ul>
-</section>
-</section>
-<section id="lunch-1" class="level2">
-<h2 class="anchored" data-anchor-id="lunch-1">12:30–13:30 Lunch</h2>
-</section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">13:30–16:00</h2>
-<section id="data-organisation-in-spreadsheets" class="level3">
-<h3 class="anchored" data-anchor-id="data-organisation-in-spreadsheets"><a href="./materials/data-organisation-in-spreadsheets.html">Data organisation in spreadsheets</a></h3>
-<ul>
-<li>Structuring spreadsheet data</li>
-<li>Tidy data principles</li>
-<li>Preparing data for analysis</li>
-</ul>
-</section>
-<section id="reproducible-r-workflows" class="level3">
-<h3 class="anchored" data-anchor-id="reproducible-r-workflows"><a href="./materials/reproducible-r-workflows.html">Reproducible R workflows</a></h3>
-<p>Choose one or more biological examples to explore and modify:</p>
-<ul>
-<li>qPCR analysis</li>
-<li>RNA sequencing analysis</li>
-<li>Flow cytometry analysis</li>
-<li>ImageJ workflows</li>
-</ul>
+<p>Using guides like these is the most common way of acquiring new knowledge of R. Now you are proficient with the basics, you should be ready to tackle new packages and workflows!</p>
+<p><strong>Good Luck!!</strong></p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
