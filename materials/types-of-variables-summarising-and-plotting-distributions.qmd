@@ -23,20 +23,6 @@ develop your understanding of working directories and paths. You will
 also create summaries and plots for data you import. This will give you
 more practice customising plots and using the pipe.
 
-## Philosophy
-
-This is not a test! It is expected that you often don't know how to start, make a lot of mistakes and need help. It is expected that you are familiar with independent study content before the workshop.
-However, you need not remember or understand every detail as the workshop should build and consolidate your understanding. 
-
-**Tips**
-
--   don't worry about making mistakes
--   don't let what you can not do interfere with what you can do
--   discussing code with your neighbours will help
--   look things up in the independent study material
--   look things up in your own code from earlier workshops
--   there are no stupid questions
-
 # Getting started
 
  Start RStudio from the Start menu.
@@ -57,8 +43,7 @@ Add a comment to the script:
 
 ## Importing data from files
 
-Last session we created data by typing the values in to
-R. This is not practical when you have a lot of data. 
+Last session we created data by typing the values in to R. This is not practical when you have a lot of data. 
 For example if you have recorded a lot of data into a spreadsheet, or you are using a data file that has been supplied to you by a person or a machine. 
 Far more commonly, we import data from a file into R. This requires you know two pieces of information.
 
