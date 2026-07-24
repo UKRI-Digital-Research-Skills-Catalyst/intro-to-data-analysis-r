@@ -106,7 +106,7 @@ ggplot(data = coat_data,
 ## Getting set up
 
 🎬 In RStudio do File \| New project \| New directory. Be purposeful
-about where you create it and name it. I suggest `cats-1`
+about where you create it and name it. I suggest `r-july`
 
 🎬 Make a new script and save it as `type-data-and-plot.R` to carry out
 the rest of the work.
