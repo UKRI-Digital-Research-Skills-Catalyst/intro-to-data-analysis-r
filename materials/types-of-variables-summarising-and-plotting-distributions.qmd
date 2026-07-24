@@ -292,7 +292,7 @@ options for producing that barchart:
 2.  plot the raw data using `geom_bar()`
 
 We did the first of these [last
-week](../week-7/workshop.html#plotting-the-data-with-ggplot). The
+session](../intro-to-data-analysis-r/blob/main/materials/introduction-to-r-and-rstudio). The
 `geom_col()` function uses the numbers in a second column to determine
 how high the bars are. However, the `geom_bar()` function will do the
 tabulating for you.
