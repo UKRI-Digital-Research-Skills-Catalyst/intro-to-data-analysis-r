@@ -199,7 +199,6 @@ window.Quarto = {
 <a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul>
 <li><a href="#session-overview" id="toc-session-overview" class="nav-link" data-scroll-target="#session-overview">Session overview</a></li>
-  <li><a href="#philosophy" id="toc-philosophy" class="nav-link" data-scroll-target="#philosophy">Philosophy</a></li>
   </ul>
 </li>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
@@ -251,17 +250,7 @@ window.Quarto = {
 </div>
 <section id="session-overview" class="level2"><h2 class="anchored" data-anchor-id="session-overview">Session overview</h2>
 <p>In this session you will learn how to import data from files in your working directory and from a folder in your working directory. This will develop your understanding of working directories and paths. You will also create summaries and plots for data you import. This will give you more practice customising plots and using the pipe.</p>
-</section><section id="philosophy" class="level2"><h2 class="anchored" data-anchor-id="philosophy">Philosophy</h2>
-<p>This is not a test! It is expected that you often don’t know how to start, make a lot of mistakes and need help. It is expected that you are familiar with independent study content before the workshop. However, you need not remember or understand every detail as the workshop should build and consolidate your understanding.</p>
-<p><strong>Tips</strong></p>
-<ul>
-<li>don’t worry about making mistakes</li>
-<li>don’t let what you can not do interfere with what you can do</li>
-<li>discussing code with your neighbours will help</li>
-<li>look things up in the independent study material</li>
-<li>look things up in your own code from earlier workshops</li>
-<li>there are no stupid questions</li>
-</ul></section></section><section id="getting-started" class="level1"><h1>Getting started</h1>
+</section></section><section id="getting-started" class="level1"><h1>Getting started</h1>
 <p>Start RStudio from the Start menu.</p>
 <p>Make an RStudio project for this workshop by clicking on the drop-down menu on top right where it says <code>Project: (None)</code> and choosing New Project, then New Directory, then New Project. Navigate to the <code>r-july</code> folder and name the RStudio Project ‘session-2’.</p>
 <p>Make a new script then save it with a name like <code>import-summarise-plot.R</code> to carry out the rest of the work.</p>
@@ -401,7 +390,7 @@ window.Quarto = {
 <li><p>plot the summary table using <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_col()</a></code></p></li>
 <li><p>plot the raw data using <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar()</a></code></p></li>
 </ol>
-<p>We did the first of these <a href="../week-7/workshop.html#plotting-the-data-with-ggplot">last week</a>. The <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_col()</a></code> function uses the numbers in a second column to determine how high the bars are. However, the <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar()</a></code> function will do the tabulating for you.</p>
+<p>We did the first of these <a href="../intro-to-data-analysis-r/blob/main/materials/introduction-to-r-and-rstudio">last session</a>. The <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_col()</a></code> function uses the numbers in a second column to determine how high the bars are. However, the <code><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar()</a></code> function will do the tabulating for you.</p>
 <p>Plot the coat data using <code>geom_bar</code>:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">cats</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">coat</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
