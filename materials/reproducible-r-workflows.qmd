@@ -1,0 +1,19 @@
+---
+title: "Reproducible R Workflows"
+toc: true
+toc-location: right
+---
+
+# Workflows
+
+Below are four links to resources for biological analyses using R.
+Have a look and see if any are relevant to your work, and if so have a look and see if you can put together a rough script using the guides.
+
+-   [qPCR analysis in R](https://liz-is.github.io/qpcr-analysis-with-r/)
+-   [Flow cytometry data analysis in R](https://jchellmuth.com/posts/FACS-with-R/)
+-   [RNA-seq analysis in R](https://carpentries-incubator.github.io/bioc-rnaseq/)
+-   [ImageJ workflows](https://3mmarand.github.io/BIO00088H-data/images/images)
+
+Using guides like these is the most common way of acquiring new knowledge of R. Now you are proficient with the basics, you should be ready to tackle new packages and workflows!
+
+**Good Luck!!**
