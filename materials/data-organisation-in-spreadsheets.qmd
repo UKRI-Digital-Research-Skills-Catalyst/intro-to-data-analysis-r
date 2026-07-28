@@ -115,11 +115,11 @@ summarise(
 
 This calculates the mean glucose level for each population.
 
-The pipe operator (`%>%`) links these steps together:
+The pipe operator (`|>`) links these steps together:
 
 ```{r}
-bloods2 %>%
-  group_by(population) %>%
+bloods2 |>
+  group_by(population) |>
   summarise(mean = mean(glucose))
 ```
 
@@ -132,8 +132,8 @@ This can be read as:
 You can calculate several statistics at once.
 
 ```{r}
-bloods2 %>%
-  group_by(population) %>%
+bloods2 |>
+  group_by(population) |>
   summarise(
     mean = mean(glucose),
     n = length(glucose),
