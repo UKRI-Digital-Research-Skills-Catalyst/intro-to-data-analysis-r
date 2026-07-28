@@ -49,8 +49,7 @@ Add code to load the **`tidyverse`** package
 
 # Exercises
 
-The [Independent Study to prepare for
-workshop](study_before_workshop.qmd) explained how to summarise and plot
+The [previous session](types-of-variables-summarising-and-plotting-distributions.qmd) explained how to summarise and plot
 a dataset containing one continuous response and one nominal explanatory
 variable with two groups.
 
