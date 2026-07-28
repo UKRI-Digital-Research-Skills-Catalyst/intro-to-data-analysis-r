@@ -263,10 +263,10 @@ div.csl-indent {
 <p>The myoglobin concentration of skeletal muscle of three species of seal in grams per kilogram of muscle was determined and the data are given in <a href="data-raw/seal.csv">seal.csv</a>. Each row represents an individual seal. The first column gives the myoglobin concentration and the second column indicates species.</p>
 <section id="import" class="level3"><h3 class="anchored" data-anchor-id="import">Import</h3>
 <p>Save <a href="data-raw/seal.csv">seal.csv</a> to your <code>data-raw</code> folder.</p>
-<p>In the next step you will import the daya and I suggest you look up data import from last week. There are two ways you could do that.</p>
+<p>In the next step you will import the daya and I suggest you look up data import from last session. There are two ways you could do that.</p>
 <ol type="1">
-<li><p>Open your own script from last week. You do not need to open the <code>week-8</code> RStudio Project itself - you can open the script you used by navigating to through the File pane. After you have found it and clicked on it to open, I suggest showing your working directory in your File Pane again. You can do that by clicking on the little arrow at the end of the path printed on the Console window.</p></li>
-<li><p>Go the the <a href="../week-8/workshop.html#importing-data-from-files" target="_blank">workshop page from last week</a>.</p></li>
+<li><p>Open your own script from last session. You do not need to open the RStudio Project itself - you can open the script you used by navigating to through the File pane. After you have found it and clicked on it to open, I suggest showing your working directory in your File Pane again. You can do that by clicking on the little arrow at the end of the path printed on the Console window.</p></li>
+<li><p>Go the the <a href="../materials/types-of-variables-summarising-and-plotting-distributions.html">previous workshop page</a>.</p></li>
 </ol>
 <p>Read the data into a dataframe called <code>seal</code>.</p>
 <p>What types of variables do you have in the <code>seal</code> dataframe? What role would you expect them to play in analysis?</p>
@@ -301,7 +301,7 @@ div.csl-indent {
 <li>sample size</li>
 <li>standard error</li>
 </ul>
-<p>We <em>can</em> get those for the whole <code>myoglobin</code> column, like we did for the <a href="../week-8/workshop.html#cells"><code>FSA</code> column in the cells dataset last week</a>. However, it is likely to be more useful to summarise <code>myoglobin</code> separately for each seal species. We can achieve this using <code>group_by()</code> before <code>summarise()</code>.</p>
+<p>We <em>can</em> get those for the whole <code>myoglobin</code> column, like we did for the <a href="../materials/types-of-variables-summarising-and-plotting-distributions.html"><code>FSA</code> column in the cells dataset last session</a>. However, it is likely to be more useful to summarise <code>myoglobin</code> separately for each seal species. We can achieve this using <code>group_by()</code> before <code>summarise()</code>.</p>
 <p>Create a data frame called <code>seal_summary</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> that contains the means, standard deviations, sample sizes and standard errors for each of the seal species:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">seal_summary</span> <span class="op">&lt;-</span> <span class="va">seal</span> <span class="op">|&gt;</span></span>
