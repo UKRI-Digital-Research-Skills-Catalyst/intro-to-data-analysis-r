@@ -151,7 +151,7 @@
     "href": "materials/reproducible-r-workflows.html",
     "title": "Reproducible R Workflows",
     "section": "",
-    "text": "Workflows\nBelow are four links to resources for biological analyses using R. Have a look and see if any are relevant to your work, and if so have a look and see if you can put together a rough script using the guides.\n\nqPCR analysis in R\nFlow cytometry data analysis in R\nRNA-seq analysis in R\nImageJ workflows\n\nUsing guides like these is the most common way of acquiring new knowledge of R. Now you are proficient with the basics, you should be ready to tackle new packages and workflows!\nGood Luck!!"
+    "text": "Workflows\nBelow are four links to resources for biological analyses using R. Have a look and see if any are relevant to your work, and if so have a look and see if you can put together a rough script using the guides.\n\nqPCR analysis in R\nFlow cytometry data analysis in R\nRNA-seq analysis in R\nImageJ workflows\n\nUsing guides like these is the most common way of acquiring new knowledge of R. Now you are proficient with the basics, you should be ready to tackle new packages and workflows! Alternatively, if you have brought any of your own scripts then feel free to attempt to get those to run.\nWhy not try looking on the UKRI Digital Research Skills Catalyst Catalogue for more guides relevant to your work?\nGood Luck!!"
   },
   {
     "objectID": "materials/principles-of-reproducibility.html",
