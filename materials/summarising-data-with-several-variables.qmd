@@ -42,7 +42,7 @@ Make a new script then save it with a name like
 work.
 
 Add a comment to the script:
-`# Summarising data in      with several variables and the role of variables in analysis`
+`# Summarising data with several variables and the role of variables in analysis`
 
 Add code to load the **`tidyverse`** package
 [@tidyverse]
