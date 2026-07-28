@@ -15,5 +15,8 @@ Have a look and see if any are relevant to your work, and if so have a look and 
 -   [ImageJ workflows](https://3mmarand.github.io/BIO00088H-data/images/images)
 
 Using guides like these is the most common way of acquiring new knowledge of R. Now you are proficient with the basics, you should be ready to tackle new packages and workflows!
+Alternatively, if you have brought any of your own scripts then feel free to attempt to get those to run.
+
+Why not try looking on the [UKRI Digital Research Skills Catalyst Catalogue](https://digitalskillscatalyst.ac.uk/) for more guides relevant to your work?
 
 **Good Luck!!**
