@@ -80,17 +80,16 @@ Save [seal.csv](data-raw/seal.csv)
 to your `data-raw` folder.
 
 In the next step you will import the daya and I suggest you look up data
-import from last week. There are two ways you could do that.
+import from last session. There are two ways you could do that.
 
-1.  Open your own script from last week. You do not need to open the
-    `week-8` RStudio Project itself - you can open the script you used
+1.  Open your own script from last session. You do not need to open the
+    RStudio Project itself - you can open the script you used
     by navigating to through the File pane. After you have found it and
     clicked on it to open, I suggest showing your working directory in
     your File Pane again. You can do that by clicking on the little
     arrow at the end of the path printed on the Console window.
 
-2.  Go the the [workshop page from last
-    week](../week-8/workshop.html#importing-data-from-files){target="_blank"}.
+2.  Go the the [previous workshop page](types-of-variables-summarising-and-plotting-distributions.qmd).
 
 Read the data into a dataframe called `seal`.
 
@@ -145,7 +144,7 @@ most useful summary statistics for a continuous variable like
 
 We *can* get those for the whole `myoglobin` column, like we did for the
 [`FSA` column in the cells dataset last
-week](../week-8/workshop.html#cells). However, it is likely to be more
+session](types-of-variables-summarising-and-plotting-distributions.qmd). However, it is likely to be more
 useful to summarise `myoglobin` separately for each seal species. We can
 achieve this using `group_by()` before `summarise()`.
 
